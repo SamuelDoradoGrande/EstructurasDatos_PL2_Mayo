@@ -1,7 +1,7 @@
 import EstructurasUtilizadas.ListaSimplementeEnlazada;
 
 public class Main{
-    //Parte de Samuel Dorado
+    //Parte de Samuel Dorado Grande
     class NodoArbol<T> implements Comparable<NodoArbol<T>> {
         T dato;
         NodoArbol<T> izq;
