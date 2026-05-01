@@ -1,0 +1,776 @@
+//---------------------------------------------------------- Árbol Binario -------------------------------------------------------------
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("========== PRUEBA 1: NUMEROS EN ORDEN ==========");
+
+        ArbolBinarioDeBusquedaEnteros arbolOrdenado = new ArbolBinarioDeBusquedaEnteros();
+
+        for (int i = 0; i <= 128; i++) {
+            arbolOrdenado.add(i);
+        }
+
+        probarArbol(arbolOrdenado, 110);
+
+
+        System.out.println("\n========== PRUEBA 2: NUMEROS ALEATORIOS ==========");
+
+        ArbolBinarioDeBusquedaEnteros arbolAleatorio = new ArbolBinarioDeBusquedaEnteros();
+
+        ArrayList<Integer> numeros = new ArrayList<>();
+
+        for (int i = 0; i <= 128; i++) {
+            numeros.add(i);
+        }
+
+        Collections.shuffle(numeros);
+
+        for (Integer n : numeros) {
+            arbolAleatorio.add(n);
+        }
+
+        probarArbol(arbolAleatorio, 110);
+    }
+
+    public static void probarArbol(ArbolBinarioDeBusquedaEnteros arbol, int valorBuscado) {
+
+        System.out.println("Suma con getSuma(): " + arbol.getSuma());
+
+        int sumaPreOrden = sumarLista(arbol.getListaPreOrden());
+        int sumaPostOrden = sumarLista(arbol.getListaPostOrden());
+        int sumaOrdenCentral = sumarLista(arbol.getListaOrdenCentral());
+
+        System.out.println("Suma en preorden: " + sumaPreOrden);
+        System.out.println("Suma en postorden: " + sumaPostOrden);
+        System.out.println("Suma en orden central: " + sumaOrdenCentral);
+
+        ArbolBinarioDeBusquedaEnteros izquierdo =
+                (ArbolBinarioDeBusquedaEnteros) arbol.getSubArbolIzquierda();
+
+        ArbolBinarioDeBusquedaEnteros derecho =
+                (ArbolBinarioDeBusquedaEnteros) arbol.getSubArbolDerecha();
+
+        int sumaSubarboles = izquierdo.getSuma() + derecho.getSuma();
+
+        System.out.println("Suma subárbol izquierdo + derecho: " + sumaSubarboles);
+        System.out.println("Dato raíz: " + arbol.getRaiz());
+
+        System.out.println("¿Coincide con la suma total? " + (sumaSubarboles == arbol.getSuma()));
+        System.out.println("Explicación: los subárboles no incluyen la raíz.");
+        System.out.println("Por eso: suma total = raíz + suma izquierda + suma derecha.");
+
+        System.out.println("Altura del árbol: " + arbol.getAltura());
+        System.out.println("Grado del árbol: " + arbol.getGrado());
+
+        System.out.println("¿Árbol homogéneo? " + arbol.isArbolHomogeneo());
+        System.out.println("¿Árbol completo? " + arbol.isArbolCompleto());
+        System.out.println("¿Árbol casi completo? " + arbol.isArbolCasiCompleto());
+
+        ArrayList<Integer> camino = arbol.getCamino(valorBuscado);
+
+        System.out.println("Camino hasta " + valorBuscado + ": " + camino);
+        System.out.println("Longitud del camino: " + camino.size());
+    }
+
+    public static int sumarLista(ArrayList<Integer> lista) {
+        int suma = 0;
+
+        for (Integer n : lista) {
+            suma += n;
+        }
+
+        return suma;
+    }
+}
+
+class ArbolBinarioDeBusqueda<T extends Comparable<T>> {
+
+    protected Nodo<T> raiz;
+
+    protected static class Nodo<T> {
+
+        T dato;
+        Nodo<T> izquierda;
+        Nodo<T> derecha;
+
+        Nodo(T dato) {
+            this.dato = dato;
+        }
+    }
+
+    public void add(T dato) {
+        raiz = addRecursivo(raiz, dato);
+    }
+
+    private Nodo<T> addRecursivo(Nodo<T> nodo, T dato) {
+
+        if (nodo == null) {
+            return new Nodo<>(dato);
+        }
+
+        if (dato.compareTo(nodo.dato) < 0) {
+            nodo.izquierda = addRecursivo(nodo.izquierda, dato);
+        } else if (dato.compareTo(nodo.dato) > 0) {
+            nodo.derecha = addRecursivo(nodo.derecha, dato);
+        }
+
+        return nodo;
+    }
+
+    public T getRaiz() {
+        if (raiz == null) {
+            return null;
+        }
+
+        return raiz.dato;
+    }
+
+    public int getAltura() {
+        return getAlturaRecursivo(raiz);
+    }
+
+    private int getAlturaRecursivo(Nodo<T> nodo) {
+
+        if (nodo == null) {
+            return 0;
+        }
+
+        int alturaIzquierda = getAlturaRecursivo(nodo.izquierda);
+        int alturaDerecha = getAlturaRecursivo(nodo.derecha);
+
+        return 1 + Math.max(alturaIzquierda, alturaDerecha);
+    }
+
+    public int getGrado() {
+        return getGradoRecursivo(raiz);
+    }
+
+    private int getGradoRecursivo(Nodo<T> nodo) {
+
+        if (nodo == null) {
+            return 0;
+        }
+
+        int hijos = 0;
+
+        if (nodo.izquierda != null) {
+            hijos++;
+        }
+
+        if (nodo.derecha != null) {
+            hijos++;
+        }
+
+        int gradoIzquierda = getGradoRecursivo(nodo.izquierda);
+        int gradoDerecha = getGradoRecursivo(nodo.derecha);
+
+        return Math.max(hijos, Math.max(gradoIzquierda, gradoDerecha));
+    }
+
+    public ArrayList<T> getListaDatosNivel(int nivel) {
+        ArrayList<T> lista = new ArrayList<>();
+        getListaDatosNivelRecursivo(raiz, nivel, 1, lista);
+        return lista;
+    }
+
+    private void getListaDatosNivelRecursivo(
+            Nodo<T> nodo,
+            int nivelBuscado,
+            int nivelActual,
+            ArrayList<T> lista
+    ) {
+
+        if (nodo == null) {
+            return;
+        }
+
+        if (nivelActual == nivelBuscado) {
+            lista.add(nodo.dato);
+        }
+
+        getListaDatosNivelRecursivo(nodo.izquierda, nivelBuscado, nivelActual + 1, lista);
+        getListaDatosNivelRecursivo(nodo.derecha, nivelBuscado, nivelActual + 1, lista);
+    }
+
+    public boolean isArbolHomogeneo() {
+        return isArbolHomogeneoRecursivo(raiz);
+    }
+
+    private boolean isArbolHomogeneoRecursivo(Nodo<T> nodo) {
+
+        if (nodo == null) {
+            return true;
+        }
+
+        boolean tieneIzquierda = nodo.izquierda != null;
+        boolean tieneDerecha = nodo.derecha != null;
+
+        if (tieneIzquierda != tieneDerecha) {
+            return false;
+        }
+
+        return isArbolHomogeneoRecursivo(nodo.izquierda)
+                && isArbolHomogeneoRecursivo(nodo.derecha);
+    }
+
+    public boolean isArbolCompleto() {
+        int altura = getAltura();
+        int numeroNodos = contarNodos(raiz);
+
+        int nodosArbolCompleto = (int) Math.pow(2, altura) - 1;
+
+        return numeroNodos == nodosArbolCompleto;
+    }
+
+    public boolean isArbolCasiCompleto() {
+
+        if (raiz == null) {
+            return true;
+        }
+
+        Queue<Nodo<T>> cola = new LinkedList<>();
+        cola.add(raiz);
+
+        boolean encontradoHueco = false;
+
+        while (!cola.isEmpty()) {
+
+            Nodo<T> actual = cola.poll();
+
+            if (actual.izquierda != null) {
+
+                if (encontradoHueco) {
+                    return false;
+                }
+
+                cola.add(actual.izquierda);
+
+            } else {
+                encontradoHueco = true;
+            }
+
+            if (actual.derecha != null) {
+
+                if (encontradoHueco) {
+                    return false;
+                }
+
+                cola.add(actual.derecha);
+
+            } else {
+                encontradoHueco = true;
+            }
+        }
+
+        return true;
+    }
+
+    private int contarNodos(Nodo<T> nodo) {
+
+        if (nodo == null) {
+            return 0;
+        }
+
+        return 1 + contarNodos(nodo.izquierda) + contarNodos(nodo.derecha);
+    }
+
+    public ArbolBinarioDeBusqueda<T> getSubArbolIzquierda() {
+        ArbolBinarioDeBusqueda<T> subarbol = new ArbolBinarioDeBusqueda<>();
+
+        if (raiz != null) {
+            subarbol.raiz = raiz.izquierda;
+        }
+
+        return subarbol;
+    }
+
+    public ArbolBinarioDeBusqueda<T> getSubArbolDerecha() {
+        ArbolBinarioDeBusqueda<T> subarbol = new ArbolBinarioDeBusqueda<>();
+
+        if (raiz != null) {
+            subarbol.raiz = raiz.derecha;
+        }
+
+        return subarbol;
+    }
+
+    public ArrayList<T> getListaPreOrden() {
+        ArrayList<T> lista = new ArrayList<>();
+        preOrden(raiz, lista);
+        return lista;
+    }
+
+    private void preOrden(Nodo<T> nodo, ArrayList<T> lista) {
+
+        if (nodo == null) {
+            return;
+        }
+
+        lista.add(nodo.dato);
+        preOrden(nodo.izquierda, lista);
+        preOrden(nodo.derecha, lista);
+    }
+
+    public ArrayList<T> getListaPostOrden() {
+        ArrayList<T> lista = new ArrayList<>();
+        postOrden(raiz, lista);
+        return lista;
+    }
+
+    private void postOrden(Nodo<T> nodo, ArrayList<T> lista) {
+
+        if (nodo == null) {
+            return;
+        }
+
+        postOrden(nodo.izquierda, lista);
+        postOrden(nodo.derecha, lista);
+        lista.add(nodo.dato);
+    }
+
+    public ArrayList<T> getListaOrdenCentral() {
+        ArrayList<T> lista = new ArrayList<>();
+        ordenCentral(raiz, lista);
+        return lista;
+    }
+
+    private void ordenCentral(Nodo<T> nodo, ArrayList<T> lista) {
+
+        if (nodo == null) {
+            return;
+        }
+
+        ordenCentral(nodo.izquierda, lista);
+        lista.add(nodo.dato);
+        ordenCentral(nodo.derecha, lista);
+    }
+
+    public ArrayList<T> getCamino(T dato) {
+        ArrayList<T> camino = new ArrayList<>();
+
+        Nodo<T> actual = raiz;
+
+        while (actual != null) {
+
+            camino.add(actual.dato);
+
+            int comparacion = dato.compareTo(actual.dato);
+
+            if (comparacion == 0) {
+                return camino;
+            } else if (comparacion < 0) {
+                actual = actual.izquierda;
+            } else {
+                actual = actual.derecha;
+            }
+        }
+
+        camino.clear();
+        return camino;
+    }
+}
+
+class ArbolBinarioDeBusquedaEnteros extends ArbolBinarioDeBusqueda<Integer> {
+
+    public int getSuma() {
+        return getSumaRecursivo(raiz);
+    }
+
+    private int getSumaRecursivo(Nodo<Integer> nodo) {
+
+        if (nodo == null) {
+            return 0;
+        }
+
+        return nodo.dato
+                + getSumaRecursivo(nodo.izquierda)
+                + getSumaRecursivo(nodo.derecha);
+    }
+
+    @Override
+    public ArbolBinarioDeBusqueda<Integer> getSubArbolIzquierda() {
+        ArbolBinarioDeBusquedaEnteros subarbol = new ArbolBinarioDeBusquedaEnteros();
+
+        if (raiz != null) {
+            subarbol.raiz = raiz.izquierda;
+        }
+
+        return subarbol;
+    }
+
+    @Override
+    public ArbolBinarioDeBusqueda<Integer> getSubArbolDerecha() {
+        ArbolBinarioDeBusquedaEnteros subarbol = new ArbolBinarioDeBusquedaEnteros();
+
+        if (raiz != null) {
+            subarbol.raiz = raiz.derecha;
+        }
+
+        return subarbol;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------- Grafo -------------------------------------------------------
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("========== GRAFO CONEXO ==========");
+        GrafoRDF grafoConexo = new GrafoRDF();
+        grafoConexo.cargarDesdeJSON("grafo_conexo.json");
+
+        System.out.println("Tripletas cargadas:");
+        grafoConexo.mostrarTripletas();
+
+        System.out.println("¿Es disjunto? " + grafoConexo.esDisjunto());
+        System.out.println("Camino mínimo entre persona:Albert Einstein y lugar:Ulm:");
+        System.out.println(grafoConexo.caminoMinimo("persona:Albert Einstein", "lugar:Ulm"));
+
+
+        System.out.println("\n========== GRAFO DISJUNTO ==========");
+        GrafoRDF grafoDisjunto = new GrafoRDF();
+        grafoDisjunto.cargarDesdeJSON("grafo_disjunto.json");
+
+        System.out.println("Tripletas cargadas:");
+        grafoDisjunto.mostrarTripletas();
+
+        System.out.println("¿Es disjunto? " + grafoDisjunto.esDisjunto());
+
+
+        System.out.println("\n========== GRAFO NOBEL ==========");
+        GrafoRDF grafoNobel = new GrafoRDF();
+        grafoNobel.cargarDesdeJSON("nobel.json");
+
+        System.out.println("Tripletas cargadas:");
+        grafoNobel.mostrarTripletas();
+
+        System.out.println("\nPregunta:");
+        System.out.println("¿Qué físico famoso nació en la misma ciudad que Einstein?");
+
+        ArrayList<String> fisicos = grafoNobel.fisicosNacidosDondeEinstein();
+
+        System.out.println("Respuesta:");
+        for (String fisico : fisicos) {
+            System.out.println(fisico);
+        }
+
+        System.out.println("\nAñadimos la tripleta de Antonio:");
+        grafoNobel.addTripleta(
+                "persona:Antonio",
+                "nace_en",
+                "lugar:Villarrubia de los Caballeros"
+        );
+
+        System.out.println("\nLugares de nacimiento de premios Nobel:");
+        ArrayList<String> lugares = grafoNobel.lugaresNacimientoPremiosNobel();
+
+        for (String lugar : lugares) {
+            System.out.println(lugar);
+        }
+
+        System.out.println("\nTipos de nodos del grafo:");
+        ArrayList<String> tipos = grafoNobel.getTiposDeNodos();
+
+        for (String tipo : tipos) {
+            System.out.println(tipo);
+        }
+
+        System.out.println("\nCamino mínimo entre persona:Albert Einstein y persona:Max Born:");
+        System.out.println(grafoNobel.caminoMinimo("persona:Albert Einstein", "persona:Max Born"));
+    }
+}
+
+class Tripleta {
+
+    String sujeto;
+    String predicado;
+    String objeto;
+
+    public Tripleta(String sujeto, String predicado, String objeto) {
+        this.sujeto = sujeto;
+        this.predicado = predicado;
+        this.objeto = objeto;
+    }
+
+    @Override
+    public String toString() {
+        return "<\"" + sujeto + "\", \"" + predicado + "\", \"" + objeto + "\">";
+    }
+}
+
+class GrafoRDF {
+
+    private ArrayList<Tripleta> tripletas;
+    private HashMap<String, ArrayList<String>> grafo;
+
+    public GrafoRDF() {
+        tripletas = new ArrayList<>();
+        grafo = new HashMap<>();
+    }
+
+    public void addTripleta(String sujeto, String predicado, String objeto) {
+
+        Tripleta t = new Tripleta(sujeto, predicado, objeto);
+        tripletas.add(t);
+
+        if (!grafo.containsKey(sujeto)) {
+            grafo.put(sujeto, new ArrayList<>());
+        }
+
+        if (!grafo.containsKey(objeto)) {
+            grafo.put(objeto, new ArrayList<>());
+        }
+
+        /*
+         * Para calcular caminos mínimos y saber si el grafo es disjunto,
+         * tratamos la relación como no dirigida.
+         *
+         * Es decir:
+         * sujeto -- objeto
+         */
+        grafo.get(sujeto).add(objeto);
+        grafo.get(objeto).add(sujeto);
+    }
+
+    public void cargarDesdeJSON(String nombreArchivo) {
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(nombreArchivo));
+
+            String linea;
+
+            String sujeto = "";
+            String predicado = "";
+            String objeto = "";
+
+            while ((linea = br.readLine()) != null) {
+
+                linea = linea.trim();
+
+                if (linea.startsWith("\"s\"")) {
+                    sujeto = obtenerValor(linea);
+                } else if (linea.startsWith("\"p\"")) {
+                    predicado = obtenerValor(linea);
+                } else if (linea.startsWith("\"o\"")) {
+                    objeto = obtenerValor(linea);
+
+                    addTripleta(sujeto, predicado, objeto);
+                }
+            }
+
+            br.close();
+
+        } catch (IOException e) {
+            System.out.println("Error leyendo el archivo: " + nombreArchivo);
+        }
+    }
+
+    private String obtenerValor(String linea) {
+
+        int primeraComilla = linea.indexOf(":");
+        String valor = linea.substring(primeraComilla + 1).trim();
+
+        if (valor.endsWith(",")) {
+            valor = valor.substring(0, valor.length() - 1);
+        }
+
+        valor = valor.trim();
+
+        if (valor.startsWith("\"")) {
+            valor = valor.substring(1);
+        }
+
+        if (valor.endsWith("\"")) {
+            valor = valor.substring(0, valor.length() - 1);
+        }
+
+        return valor;
+    }
+
+    public void mostrarTripletas() {
+        for (Tripleta t : tripletas) {
+            System.out.println(t);
+        }
+    }
+
+    public ArrayList<String> caminoMinimo(String origen, String destino) {
+
+        ArrayList<String> camino = new ArrayList<>();
+
+        if (!grafo.containsKey(origen) || !grafo.containsKey(destino)) {
+            return camino;
+        }
+
+        Queue<String> cola = new LinkedList<>();
+        HashSet<String> visitados = new HashSet<>();
+        HashMap<String, String> padre = new HashMap<>();
+
+        cola.add(origen);
+        visitados.add(origen);
+        padre.put(origen, null);
+
+        while (!cola.isEmpty()) {
+
+            String actual = cola.poll();
+
+            if (actual.equals(destino)) {
+                break;
+            }
+
+            for (String vecino : grafo.get(actual)) {
+
+                if (!visitados.contains(vecino)) {
+                    visitados.add(vecino);
+                    padre.put(vecino, actual);
+                    cola.add(vecino);
+                }
+            }
+        }
+
+        if (!padre.containsKey(destino)) {
+            return camino;
+        }
+
+        String actual = destino;
+
+        while (actual != null) {
+            camino.add(0, actual);
+            actual = padre.get(actual);
+        }
+
+        return camino;
+    }
+
+    public boolean esDisjunto() {
+
+        if (grafo.isEmpty()) {
+            return false;
+        }
+
+        HashSet<String> visitados = new HashSet<>();
+        Queue<String> cola = new LinkedList<>();
+
+        String primerNodo = grafo.keySet().iterator().next();
+
+        cola.add(primerNodo);
+        visitados.add(primerNodo);
+
+        while (!cola.isEmpty()) {
+
+            String actual = cola.poll();
+
+            for (String vecino : grafo.get(actual)) {
+
+                if (!visitados.contains(vecino)) {
+                    visitados.add(vecino);
+                    cola.add(vecino);
+                }
+            }
+        }
+
+        return visitados.size() != grafo.size();
+    }
+
+    public ArrayList<String> getTiposDeNodos() {
+
+        HashSet<String> tipos = new HashSet<>();
+
+        for (String nodo : grafo.keySet()) {
+
+            if (nodo.contains(":")) {
+                String tipo = nodo.substring(0, nodo.indexOf(":"));
+                tipos.add(tipo);
+            } else {
+                tipos.add("literal");
+            }
+        }
+
+        return new ArrayList<>(tipos);
+    }
+
+    public ArrayList<String> fisicosNacidosDondeEinstein() {
+
+        ArrayList<String> resultado = new ArrayList<>();
+
+        String ciudadEinstein = buscarObjeto("persona:Albert Einstein", "nace_en");
+
+        for (Tripleta t : tripletas) {
+
+            if (t.predicado.equals("profesion")
+                    && t.objeto.equals("fisico")
+                    && !t.sujeto.equals("persona:Albert Einstein")) {
+
+                String ciudadPersona = buscarObjeto(t.sujeto, "nace_en");
+
+                if (ciudadPersona.equals(ciudadEinstein)) {
+                    resultado.add(t.sujeto);
+                }
+            }
+        }
+
+        return resultado;
+    }
+
+    public ArrayList<String> lugaresNacimientoPremiosNobel() {
+
+        HashSet<String> personasConNobel = new HashSet<>();
+
+        for (Tripleta t : tripletas) {
+
+            if (t.predicado.equals("premio") && t.objeto.contains("Nobel")) {
+                personasConNobel.add(t.sujeto);
+            }
+        }
+
+        HashSet<String> lugares = new HashSet<>();
+
+        for (Tripleta t : tripletas) {
+
+            if (personasConNobel.contains(t.sujeto) && t.predicado.equals("nace_en")) {
+                lugares.add(t.objeto);
+            }
+        }
+
+        return new ArrayList<>(lugares);
+    }
+
+    private String buscarObjeto(String sujeto, String predicado) {
+
+        for (Tripleta t : tripletas) {
+
+            if (t.sujeto.equals(sujeto) && t.predicado.equals(predicado)) {
+                return t.objeto;
+            }
+        }
+
+        return "";
+    }
