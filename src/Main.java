@@ -1,3 +1,4 @@
+import EstructurasUtilizadas.LSEOrdenada;
 import EstructurasUtilizadas.ListaSimplementeEnlazada;
 
 public class Main{
@@ -214,8 +215,181 @@ public class Main{
         }
     }
 
-    //Parte de Eduardo Nicolás Minea Patrascu
+    public class Vertice<T> implements Comparable<Vertice<T>> {
+        T data;
+        ListaSimplementeEnlazada<Arista<T>> aristasSimples;
+        ListaSimplementeEnlazada<Arista<T>> aristasEntrada;
+        ListaSimplementeEnlazada<Arista<T>> aristasSalida;
+        int grado;
 
-    //Parte de Pablo Cayetano Herrero Martín
+        public Vertice(T data) {
+            this.data = data;
+            this.aristasEntrada = new ListaSimplementeEnlazada<>();
+            this.aristasSalida = new ListaSimplementeEnlazada<>();
+            grado = 0;
+        }
+
+        public void addArista(Arista<T> arista){
+            if (arista.origen == this || arista.destino == this){
+                this.aristasSimples.add(arista);
+                grado++;
+            }
+            else System.out.println("No se pudo añadir la arista; ninguno de los extremos de la arista corresponden con este vértice");
+        }
+
+        public void addAristaSalida(Arista<T> arista){
+            if (arista.origen == this){
+                this.aristasSalida.add(arista);
+                grado++;
+            }
+            else System.out.println("No se pudo añadir la arista; el vértice de origen de la arista no corresponde con este vértice");
+        }
+
+        public void addAristaEntrada(Arista<T> arista){
+            if (arista.destino == this){
+                this.aristasEntrada.add(arista);
+                grado++;
+            }
+            else System.out.println("No se pudo añadir la arista; el vértice de destino de la arista no corresponde con este vértice");
+        }
+
+        public int getGrado(){
+            return grado;
+        }
+
+        @Override
+        public int compareTo(Vertice<T> o) {
+            return 0;
+        }
+    }
+
+    public class Arista<T> implements Comparable<Arista<T>> {
+        Vertice<T> origen;
+        Vertice<T> destino;
+        double coste;
+
+        public Arista(Vertice<T> origen, Vertice<T> destino, double coste) {
+            this.origen = origen;
+            this.destino = destino;
+            this.coste = coste;
+        }
+
+        @Override
+        public int compareTo(Arista<T> o) {
+            return 0;
+        }
+    }
+
+    public class Grafo<T extends Comparable<T>>{
+        ListaSimplementeEnlazada<Vertice<T>> vertices;
+        ListaSimplementeEnlazada<Arista<T>> aristas;
+
+        public Grafo(){
+            this.vertices = new ListaSimplementeEnlazada<>();
+            this.aristas = new ListaSimplementeEnlazada<>();
+        }
+
+        public void addVertice(Vertice<T> vertice) {
+            this.vertices.add(vertice);
+        }
+
+        public void addArista(Arista<T> arista) {
+            this.aristas.add(arista);
+            arista.origen.addAristaSalida(arista);
+            arista.destino.addAristaEntrada(arista);
+        }
+
+        public boolean isGrafoSimple(){
+            for (int i = 0; i < aristas.size(); i++){
+                Arista<T> aristaI = aristas.findElement(i);
+                if (aristaI.origen == aristaI.destino) return false;
+                if (i++ < aristas.size()){
+                    for (int j = i + 1; j < aristas.size(); j++){
+                        Arista<T> aristaII = aristas.findElement(j);
+                        if ((aristaII.origen == aristaI.origen && aristaII.destino == aristaI.destino) || (aristaII.destino == aristaI.origen && aristaII.origen == aristaI.destino)) return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        public boolean isGrafoDirigido(){
+            for (int i = 0; i < vertices.size(); i++){
+                Vertice<T> vertice = vertices.findElement(i);
+                if (!vertice.aristasEntrada.isEmpty() || !vertice.aristasSalida.isEmpty()) return true;
+            }
+            return false;
+        }
+
+        public boolean isCompleto(){
+            for (int i = 0; i < vertices.size(); i++){
+                Vertice<T> verticeI = vertices.findElement(i);
+                if (i++ < vertices.size()){
+                    for (int j = i + 1; j < vertices.size(); j++){
+                        Vertice<T> verticeII = vertices.findElement(i);
+                        Arista<T> aristaAuxI = new Arista<>(verticeI, verticeII, 1);
+                        Arista<T> aristaAuxII = new Arista<>(verticeII, verticeI, 1);
+                        if(aristas.get(aristaAuxI) == null && aristas.get(aristaAuxII) == null) return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        public boolean isConexo(){
+            Vertice<T> vertice = vertices.findElement(0);
+            return MSTPrim(vertice).vertices.size() == vertices.size();
+        }
+
+        public boolean isArbol(){
+            return isConexo() && aristas.size() == vertices.size() - 1;
+        }
+
+        public boolean isEuleriano(){
+            if (isConexo()){
+                for (int i = 0; i < vertices.size(); i++){
+                    if (vertices.findElement(i).grado % 2 != 0) return false;
+                }
+                return true;
+            }
+            return false;
+        }
+
+        public Grafo<T> MSTPrim(Vertice<T> nodoInicio){
+            Grafo<T> MST = new Grafo<>();
+            MST.addVertice(nodoInicio);
+            ListaSimplementeEnlazada<Vertice<T>> visitados = new ListaSimplementeEnlazada<>();
+            LSEOrdenada<Arista<T>> heap = new LSEOrdenada<>();
+            visitados.add(nodoInicio);
+            addHeap(nodoInicio, heap, visitados);
+            while (!heap.isEmpty()){
+                Arista<T> aristaMenorPeso = heap.del(heap.findElement(0));
+                Vertice<T> nuevo = aristaMenorPeso.destino;
+                if (visitados.get(nuevo) == null){
+                    MST.addVertice(nuevo);
+                    MST.addArista(aristaMenorPeso);
+                    addHeap(nuevo, heap, visitados);
+                }
+            }
+            return MST;
+        }
+
+        private void addHeap(Vertice<T> nodo, LSEOrdenada<Arista<T>> heap, ListaSimplementeEnlazada<Vertice<T>> visitados){
+            for (int i = 0; i < nodo.aristasSimples.size(); i++){
+                Arista<T> nuevo = nodo.aristasSimples.findElement(i);
+                if (heap.get(nuevo) == null){
+                    if (visitados.get(nuevo.destino) == null) heap.add(nuevo);
+                    else if (visitados.get(nuevo.origen) == null) heap.add(nuevo);
+                }
+            }
+            for (int i = 0; i < nodo.aristasSalida.size(); i++){
+                Arista<T> nuevo = nodo.aristasSalida.findElement(i);
+                if (heap.get(nuevo) == null && visitados.get(nuevo.destino) == null) heap.add(nuevo);
+            }
+        }
+    }
+
+
+    //Parte de Eduardo Nicolás Minea Patrascu
 
 }
