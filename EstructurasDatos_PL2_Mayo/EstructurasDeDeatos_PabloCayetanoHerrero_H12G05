@@ -1,0 +1,2919 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.kotlin
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+# Default ignored files
+/shelf/
+/workspace.xml
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Arbol" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+  </component>
+</project>
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-25" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="65652a43-e444-4d31-a8a6-f70b4c47f31b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="3BWef1Vxskw8lu9EEVTiwHVrJ6A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main_Test_ABB.executor": "Run",
+    "Application.Main_Test_ABBE.executor": "Run",
+    "Application.Main_Test_Grafo.executor": "Run",
+    "Application.Main_Test_Grafo_2.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/pablo/IdeaProjects/Arbol/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pablo\IdeaProjects\Arbol\src\main\Rutas_grafo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main_Test_Grafo">
+    <configuration name="Main_Test_ABB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArbolBinarioDeBúsqueda.Árbol.Main_Test_ABB" />
+      <module name="Arbol" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArbolBinarioDeBúsqueda.Árbol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_Test_ABBE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArbolBinarioDeBúsqueda.Árbol.Main_Test_ABBE" />
+      <module name="Arbol" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArbolBinarioDeBúsqueda.Árbol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_Test_Grafo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArbolBinarioDeBúsqueda.Grafo.Main_Test_Grafo" />
+      <module name="Arbol" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArbolBinarioDeBúsqueda.Grafo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_Test_Grafo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArbolBinarioDeBúsqueda.Grafo.Main_Test_Grafo" />
+      <module name="Arbol" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArbolBinarioDeBúsqueda.Grafo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main_Test_Grafo" />
+        <item itemvalue="Application.Main_Test_ABB" />
+        <item itemvalue="Application.Main_Test_Grafo_2" />
+        <item itemvalue="Application.Main_Test_ABBE" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65652a43-e444-4d31-a8a6-f70b4c47f31b" name="Changes" comment="" />
+      <created>1774609356362</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774609356362</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Arbol y Grafo_ PAbloCayetanoHerrero</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------------- RESPUESTAS.md -----------------------------------------------------------------------//
+
+
+
+- ¿Cuál es el caminimo mínimo entre dos entidades A y B del grafo?
+- R: Se hace a través de Dijkstra, es decir, se miran desde un vértice inicial
+todas sus aristas salientes, y, la que menor peso tenga es la que se escoge, y se llega 
+al vértice de destino de esa arista. Se marca el origen y el destino, y se repite el proceso desde los vértices de destino 
+hasta que estén todos los vértices marcados. Hay que tener en cuenta que al elegir las aristas con menor peso, deben de tener como 
+destino vértices no marcados, a los que calcula la distancia de nuevo, y si es menor el peso total del recorrido que el último peso de recorrido
+hacia ese vértice, se elige ese camino. 
+
+---------------------
+
+- Dado un archivo de datos que se carga en el grafo, ¿genera un grafo disjunto?
+- R: Depende. Si todos los vértices están conectados entre sí con algún camino,
+es conjunnto, pero si hay algún vértice aislado, es disjunto. Así que no tiene porqué ser disjunto. 
+
+----------------
+
+- Suponiendo un grafo de conocimiento general con la información de los premios Nobel de todas las áreas, cómo harías para responder a la pregunta: ¿Qué físico famoso nació en la misma ciudad que Einstein?
+- R: Se busca el vértice de Einstein, busca la arista que tenga la relación de ciudad y se saca la ciudad de Einstein, 
+y se buscan las aristas que tengan como destino, y se sacan los natales, y de esos, se filtra por físicos, y esos son los físicos natales de la misma ciudad de Einstein. 
+
+---------------
+
+- Liste cuáles son los lugares de nacimiento de los premios Nobel. ¿Qué caminos necesita recorrer para que su respuesta fuese correcta?
+- R: Se recorren todos los vértices y se buscan los nobel, y con las aristas se llega a su ciudad natal, que se añade a una lista, que, al acabar de recorrer todos los nodos
+se retorna, dando las ciudades de los nobel. (persona -> premio -> nobel, persona -> nace_en -> ciudad, ciudad -> inverso de nace_en -> persona). 
+
+---------------
+
+- ¿Qué tipos de nodos tiene el grafo?
+- R: Hay nodos persona (Einstein, etc...), lugar (Uml, etc...), premio (nobel, etc...), tipos (físico, etc...), abstractos (el resto (letras, etc...)). 
+
+------------
+
+- ¿Qué es una ontología? ¿Qué relación tiene con los grafos? ¿Podríamos crear una ontología para nuestro problema? ¿Qué haríamos con ella?
+- R: Una ontología es una estructura que tiene clases conceptuales (persona, tipo, lugar, etc...) y relaciones entre esas clases.
+- R: Se relaciona con los grafos porque estos tienen vértices que pueden ser de cualquier cosa (por lo tanto son conceptuales), que son relacionados de cualquier manera con las aristas, que pueden relacionar dos cosas de cualquier manera. 
+- R: Sí, se puede crear una ontología co un grafo. 
+- R: Estructuras de manera lógica cosas con poca interacción global (que las cosas sean grandes y tengan una relación mñinima con otros vértices, pero ayuda a trazar caminos para relacionar cosas), Relacionar cosas que precían que no tenían nada que ver, 
+estructurar una red de gran tamaño (sanitaria, militar, etc...). 
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------------------- Arbol Binario (Normal y de Enteros) y Grafo --------------------------------------------------------------------
+
+
+
+
+package ArbolBinarioDeBúsqueda_y_Grafo.Cola;
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------------------------------- Cola (Clase y nodo) -----------------------------------------------------------
+
+
+public class Cola<E> {
+
+    private NodoCola<E> cabeza;
+    private NodoCola<E> pie;
+    private int size;
+
+    public Cola() { // El constructor vacía de la Cola.
+        cabeza = null;
+        pie = null;
+        size = 0;
+    }
+
+    public void enqueue(E elemento) {
+        NodoCola<E> nuevo = new NodoCola<E>(elemento);  // Se crea el elemento.
+        if (cabeza == null && pie == null) { // Si no hay ningún elemento, la cabeza y el pie pasan a ser el mismo elemento, el nuevo.
+            cabeza = nuevo;
+            pie = nuevo;
+        }
+        else { // Si ya había algún elemento.
+            pie.setSiguienteelemento(nuevo); // El siguiente elemento del pie pasa a ser el nuevo elemento.
+            pie = nuevo; // El nuevo elemento pasa a llamarse pie, porque toma la posición del que era antes el pie.
+        }
+        size += 1; // Se amplía en 1 la cola.
+    }
+
+
+    public E dequeue() {
+
+        if (cabeza == null && pie == null) { // Si no hay ningún elemento, no se puede devolver nada.
+            return null;
+        }
+        else { // Si hay datos.
+            E dato = cabeza.getDato(); // El dato toma el valor de la cabeza.
+            cabeza = cabeza.getSiguienteelemento(); // La cabeza pasa a ser el siguiente elemento, es decir, el elemento que se introdujo después de introducir a la cabeza.
+
+            if (cabeza == null) { // Si la cabeza pasa a ser un elemento inexistente, entonces es que no hay elementos en la cola.
+                pie = null; // Entonces el pie pasa a ser ningún elemento.
+            }
+
+            size -= 1; // Se disminuye en 1 la cola.
+            return dato; // Se retorna el dato eliminado.
+        }
+    }
+
+
+
+    public E peek() {
+        if (cabeza == null && pie == null) { // Si no hay elementos, no hay nada qu ver.
+            return null;
+        }
+        return cabeza.getDato(); // Si hay elementos, se ve la cabeza.
+    }
+
+
+    // Metodo para ver si un elemento está en la cola.
+    public boolean contains(E elemento) {
+        NodoCola<E> actual = cabeza; // Actual se coloca en la cabeza.
+        while (actual != null) { // Hasta que actual no exista.
+            if (actual.getDato().equals(elemento)) { // Si el actual es el elemento que se busca.
+                return true; // Se retorna true.
+            }
+            actual = actual.getSiguienteelemento(); // Si no lo es, se pasa al siguiente.
+        }
+        return false; // Si no se ha encontrado se retorna false.
+    }
+
+
+    public int getSize() {
+        if (cabeza == null && pie == null) { // Si no hay elementos, el tamaño de la cola es 0.
+            return 0;
+        }
+        else {
+            return size; // Si no, se retorna el tamaño que se ha ido regulando al final de cada metodo. .
+        }
+    }
+
+
+    // Si la cabeza es null, no existe, y tampoco hay más elementos, entonces está vacía, sino, como mínimo tiene un elemento.
+    public boolean isEmpty() {
+        return cabeza == null;
+    }
+}
+
+
+
+
+package ArbolBinarioDeBúsqueda_y_Grafo.Cola;
+
+public class NodoCola<E> {
+
+    private E dato;
+    private NodoCola<E> siguienteelemento;
+
+
+
+    public NodoCola(E dato) {
+        this.dato = dato;
+        this.siguienteelemento = null; // Como solo hay un dato, el siguiente no existe.
+    }
+
+    // Getter y setter  de dato.
+    public E getDato() {
+        return this.dato;
+    }
+    public void setDato(E dato) {
+        this.dato = dato;
+    }
+
+
+    // Getter y setter de siguienteelemento.
+    public NodoCola<E> getSiguienteelemento() {
+        return this.siguienteelemento;
+    }
+    public void setSiguienteelemento(NodoCola<E> siguienteelemento) {
+        this.siguienteelemento = siguienteelemento;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------------------- Grafo ---------------------------------------------------------------------------------
+package ArbolBinarioDeBúsqueda_y_Grafo.Grafo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --------------------------- Arista -----------------------------------
+
+public class Arista<E> {
+
+    private Vertice<E> origen; // El vértice desde el que sale.
+    private Vertice<E> destino; // El vértice al que llega.
+    private String relacion; // Cuál es la relación entre los vértices.
+    private double coste; // El peso de la arista.
+
+
+
+    public Arista(Vertice<E> origen, Vertice<E> destino, String relacion, double coste) { // Constructor de la arista.
+        this.origen = origen;
+        this.destino = destino;
+        this.relacion = relacion;
+        this.coste = coste;
+    }
+
+
+
+    // Getter y setter de origen.
+    public Vertice<E> getOrigen() {
+        return origen;
+    }
+    public void setOrigen(Vertice<E> origen) {
+        this.origen = origen;
+    }
+
+
+
+    // Gettery setter de destino.
+    public Vertice<E> getDestino() {
+        return destino;
+    }
+    public void setDestino(Vertice<E> destino) {
+        this.destino = destino;
+    }
+
+
+
+    // Getter y setter de relación.
+    public String getRelacion() {
+        return relacion;
+    }
+    public void setRelacion(String relacion) {
+        this.relacion = relacion;
+    }
+
+
+
+    // Getter y setter de coste.
+    public double getCoste() {
+        return coste;
+    }
+    public void setCoste(double coste) {
+        this.coste = coste;
+    }
+
+
+
+
+    @Override // Se imprime desde A hasta B con la relación entre A y B y el peso de la arista.
+    public String toString() {
+        return origen + " --(" + relacion + ", " + coste + ")--> " + destino;
+    }
+}
+
+
+
+
+
+
+
+// ---------------------------------------- Grafo ---------------------------------------
+
+
+package ArbolBinarioDeBúsqueda_y_Grafo.Grafo;
+
+import ArbolBinarioDeBúsqueda_y_Grafo.Lista.Lista;
+import ArbolBinarioDeBúsqueda_y_Grafo.Cola.Cola;
+import java.io.*;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Grafo<E> {
+
+    private Lista<Vertice<E>> vertices; // Lista de los vértices del grafo.
+    private Lista<Arista<E>> aristas; // Lista de las aristas del grafo.
+
+
+
+    // Getters de vértices y aristas.
+    public Lista<Vertice<E>> getVertices() {
+        return vertices;
+    }
+    public Lista<Arista<E>> getAristas() {
+        return aristas;
+    }
+
+
+
+
+    //------------------------------ Vértices y aristas ---------------------------------
+    public Grafo() { // Constructor del grafo vacío.
+        vertices = new Lista<>();
+        aristas = new Lista<>();
+    }
+
+
+    // Metodo para añadir un vértice al grafo.
+    public void addVertice(E dato) {
+        if (buscarVertice(dato) != null) { // Si el vértice ya existe, no lo añade.
+            return; // Nos salimos.
+        }
+        vertices.add(new Vertice<>(dato)); // Si no está, lo añade a la lista de vértices.
+    }
+
+
+    // Metodo para añadir una arista dirigida al grafo.
+    public void addArista(E origen, E destino, String relacion, double coste) {
+        Vertice<E> vOrigen = buscarVertice(origen); // Busco el vértice de origen.
+        Vertice<E> vDestino = buscarVertice(destino); // Busco el vértice de destino.
+        if (vOrigen == null || vDestino == null) { // Si no existe el origen o el destino.
+            System.out.println("No existe origen o destino");
+            return; // Nos salimos.
+        }
+        Arista<E> nueva = new Arista<>(vOrigen, vDestino, relacion, coste); // Se crea la arista.
+        aristas.add(nueva); // Se guarda en la lista de aristas.
+        vOrigen.addArcoSalida(nueva); // Se añade a la lista de aristas que salen del origen.
+    }
+
+
+
+
+    // Metodo para buscar un vértice en el grafo.
+    public Vertice<E> buscarVertice(E dato) {
+        for (int i = 0; i < vertices.getSize(); i += 1) { // Se recorren los vértices.
+            if (vertices.get(i).getDato().equals(dato)) { // Si se encuentra.
+                return vertices.get(i); // Se retorna el vértice que se buscaba.
+            }
+        }
+        return null; // Si no se encuentra, se retorna nulo, es decir, que no está.
+    }
+
+
+
+    // Metodo para ver si hay un detrminado vértice en el grafo.
+    public boolean contieneVertice(E dato) {
+        return buscarVertice(dato) != null;  // Si al buscar el dato este está, se retorna el dato, que es distinto de null
+        // y se retorna true.
+    }
+
+
+
+
+    // Metodo para añadir tripletes.
+    public void addTripleta(E sujeto, String predicado, E objeto) {
+        addArista(sujeto, objeto, predicado, 1.0); // Se crea una arista.
+    }
+
+    // Metodo para imprimir los tripletes que hay en aristas.
+    public void imprimirTripletas() {
+        for (int i = 0; i < aristas.getSize(); i += 1) { // Se recorren las aristas.
+            Arista<E> a = aristas.get(i); // Se saca la arista actual.
+            System.out.println( a.getOrigen().getDato() + " -- " + a.getRelacion() + " --> " + a.getDestino().getDato());
+            // Se imprime el triplete.
+        }
+    }
+
+
+
+//--------------------------------------------- BFS -------------------------------
+
+    // Metodo para hacer el BFS desde un "origen" determinado.
+    public Lista<E> BFS(E origenDato) {
+        Vertice<E> origen = buscarVertice(origenDato); // Busca el vértice origen.
+        if (origen == null) { // Si no existe el origen.
+            System.out.println("No existe el original");
+            return null; // No se puede hacer nada.
+        }
+        Lista<Vertice<E>> visitados = new Lista<>(); // Se guardan los vértices visitados.
+        Cola<Vertice<E>> cola = new Cola<>(); // Cola de BFS.
+        Lista<E> recorrido = new Lista<>(); // Se guardan en orden los vértices por los que se ha pasado.
+        cola.enqueue(origen); // Se empieza desde "origen".
+        visitados.add(origen); // Se añade a la lista de los vértices visitados el origen.
+        while (!cola.isEmpty()) { // Mientras que la cola no esté vacía.
+            Vertice<E> actual = cola.dequeue(); // Saca el siguiente elemento.
+            recorrido.add(actual.getDato()); // Se marca como que ese es el recorrido.
+            for (int i = 0; i < actual.getArcosSalida().getSize(); i += 1) { // Recorre la lista de los vértices vecinos del vértice.
+                Vertice<E> vecino = actual.getArcosSalida().get(i).getDestino(); // Se coje el vértice.
+                if (!visitados.contains(vecino)) { // Si no está el vértice en los visitados.
+                    visitados.add(vecino); // Se marca como visitado.
+                    cola.enqueue(vecino); // Se guarda en la cola.
+                }
+            }
+        }
+        return recorrido; // Se retorna el recorrido.
+    }
+
+
+
+
+
+//------------------------------------- Dijkstra -----------------------------
+
+    // Metodo para hallar el camino mínimo entre dos vértices determinados con Dijkstra.
+    public Lista<E> getCaminoMinimo(E origenDato, E destinoDato) {
+        Vertice<E> origen = buscarVertice(origenDato); // Se busca el vértice origen para empezar desde ahí.
+        Vertice<E> destino = buscarVertice(destinoDato); // Se busca el vértice destino para llegar ahí.
+        if (origen == null || destino == null) { // Si no existe el origen o el destino.
+            return new Lista<>(); // Nos salimos y se retorna una lista vacía.
+        }
+        Lista<Vertice<E>> pendientes = new Lista<>(); // Son los vértices por los que no se ha pasado.
+        Lista<Vertice<E>> visitados = new Lista<>();  // Son los vértices por los que se ha pasado.
+        Lista<Double> distancias = new Lista<>(); // Distancia mínima actual desde el origen.
+        Lista<Vertice<E>> anteriores = new Lista<>(); // Se guarda cuál es el nodo anterior a cada vértice que se ha llegado.
+        inicializarDijkstra(origen, pendientes, distancias, anteriores);
+        while (!pendientes.isEmpty()) { // Mientras que todavía falten vértices por los que pasar.
+            Vertice<E> actual = extraerVerticeMenorDistancia(pendientes, distancias); // Se elige el que esté más cerca del actual.
+            visitados.add(actual); // El que se ha visitado se añade a la lista de vértices añadidos.
+            reducirAristas(actual, pendientes, visitados, distancias, anteriores); // Se busca un camino mejor.
+        }
+        return reconstruirCamino(origen, destino, anteriores); // Te dice el camino desde el origen al destino.
+    }
+
+
+
+    // Metodo que prepara las estructuras.  antes de hacer Dijkstra.
+    private void inicializarDijkstra(Vertice<E> origen, Lista<Vertice<E>> pendientes, Lista<Double> distancias, Lista<Vertice<E>> anteriores) {
+        for (int i = 0; i < vertices.getSize(); i += 1) { // Se recorren los vértices del grafo.
+            pendientes.add(vertices.get(i)); // Se añade el vértice en el que se esté a pendientes.
+            if (vertices.get(i).equals(origen)) { // Si el vértice es el origen.
+                distancias.add(0.0); // La distancia al origen es cero.
+            } else {
+                distancias.add(Double.MAX_VALUE); // El resto inicia a una distancia "infinita".
+            }
+            anteriores.add(null); // Todavía no hay nada anterior.
+        }
+    }
+
+
+
+    // Metodo para ver cuál es el vértice con el que conecta el último vértice con la menor distancia.
+    private Vertice<E> extraerVerticeMenorDistancia(Lista<Vertice<E>> pendientes, Lista<Double> distancias) {
+        Vertice<E> mejor = pendientes.get(0); // Suponemos que el primero es el mejor.
+        for (int i = 1; i < pendientes.getSize(); i += 1) { // Se miran los vértices.
+            if (getDistancia(pendientes.get(i), distancias) < getDistancia(mejor, distancias)) { // Si la distancia es menor, se cambia como mejor el más corto.
+                mejor = pendientes.get(i); // Toma el elemento i de pendientes.
+            }
+        }
+        pendientes.remove(pendientes.index(mejor)); // Elimina el elemento en i.
+        return mejor; // Se retorna el elemento que menos distancia tiene con el vértice del que sale la arista.
+    }
+
+
+
+    // Metodo para ver si pasar por el vértice actual mejora el camino.
+    private void reducirAristas(Vertice<E> actual, Lista<Vertice<E>> pendientes, Lista<Vertice<E>> visitados, Lista<Double> distancias, Lista<Vertice<E>> anteriores) {
+        for (int i = 0; i < actual.getArcosSalida().getSize(); i += 1) { // Se recorren las aristas desde el vértice.
+            Arista<E> arco = actual.getArcosSalida().get(i); // Se guarda la arista en la que se está.
+            Vertice<E> vecino = arco.getDestino(); // Se ve el vértice al que llega la arista.
+            if (visitados.contains(vecino)) { // Si ya se ha visitado.
+                continue; // Se pasa de él.
+            }
+            double nuevaDistancia = getDistancia(actual, distancias) + arco.getCoste(); // Se calcula la distancia pasando por el vértice actual.
+            if (nuevaDistancia < getDistancia(vecino, distancias)) { // Si la distancia es menor.
+                setDistancia(vecino, nuevaDistancia, distancias); // Se modifica la distancia.
+                setAnterior(vecino, actual, anteriores); // Se modifica el camino.
+            }
+        }
+    }
+
+
+    // Metodo que reconstruye el camino mínimo.
+    private Lista<E> reconstruirCamino(Vertice<E> origen, Vertice<E> destino, Lista<Vertice<E>> anteriores) {
+        Lista<E> caminoInvertido = new Lista<>(); // Se crea la lista para hacer el camnino desde el destino hasta el origen.
+        Vertice<E> actual = destino; // Se inicia desde el vértice de destino.
+        while (actual != null) { // Se hace un bucle.
+            caminoInvertido.add(actual.getDato()); // Se añade el vértice.
+            if (actual.equals(origen)) { // Si el actual es el vértice origen.
+                break; // Se acaba.
+            }
+            actual = getAnterior(actual, anteriores); // Va al vértice anterior.
+        }
+        return invertirLista(caminoInvertido); // Se retorna el camino al revés.
+    }
+
+
+
+    // Metodo para saber la distancia a ese vértice.
+    private double getDistancia(Vertice<E> vertice, Lista<Double> distancias) {
+        int indice = vertices.index(vertice); // Se busca la posición del vértice.
+        return distancias.get(indice); // Se devuelve la distancia que está en ese índice.
+    }
+    // Metodo para cambiar la distancia a un vértices.
+    private void setDistancia(Vertice<E> vertice, double distancia, Lista<Double> distancias) {
+        int indice = vertices.index(vertice); // Se busca la posición del vértice.
+        distancias.set(indice, distancia); // Se cambia la distancia.
+    }
+
+
+
+    // Metodo para saber el anterior vértice en el camino.
+    private Vertice<E> getAnterior(Vertice<E> vertice, Lista<Vertice<E>> anteriores) {
+        int indice = vertices.index(vertice); // Se busca la posición del vértice.
+        return anteriores.get(indice); // Devuelve el vértice anterior.
+    }
+    // Metodo para guardar el vértice anterior al que se está en un momento determinado.
+    private void setAnterior(Vertice<E> vertice, Vertice<E> anterior, Lista<Vertice<E>> anteriores) {
+        int indice = vertices.index(vertice); // Se busca la posición del vértice.
+        anteriores.set(indice, anterior); // Se guarda el vértice en esa posición.
+    }
+
+
+
+    // Metodo para darle la vuelta a una lista.
+    private Lista<E> invertirLista(Lista<E> original) {
+        Lista<E> invertida = new Lista<>(); // Se crea la lista.
+        for (int i = original.getSize() - 1; i >= 0; i -= 1) { // Se recorre la lista desde el último elemento.
+            invertida.add(original.get(i)); // Se añade a la lista.
+        }
+        return invertida; // Se devuelve la lista.
+    }
+
+
+
+
+//-------------------------------- Ver si es conjunto o disjunto -------------
+
+
+    // Metodo para ver si el grafo es disjunto.
+    public boolean isDisjunto() {
+        if (vertices.isEmpty()) { // Si el grafo no tiene vértices.
+            return false; // No es disjunto porque no hay nada, así que nada puede estar separado.
+        }
+        Lista<E> visitados = BFS(vertices.get(0).getDato()); // Se hace BFS desde el primer vértice añadido al grafo.
+        return visitados.getSize() != vertices.getSize(); // Si la cantidad de vértices visitados no es la misma que la total de vértices
+        // es porque el grafo es un grafo con varios frofos inconexos, es decir, es disjunto.
+    }
+
+
+
+//--------------------------------- Relaciones entre vértices --------------
+
+
+    // Metodo que retorna los nodos conectados por una relación determinada.
+    public Lista<E> getDestinosRelacionados(E origenDato, String relacion) {
+        Lista<E> resultado = new Lista<>(); // Se crea una lista para guardar los resultados.
+        Vertice<E> origen = buscarVertice(origenDato); // Busca el vértice origen en el grafo.
+        if (origen == null) { // Si no existe.
+            return resultado; // Devuelve la lista vacía.
+        }
+        for (int i = 0; i < origen.getArcosSalida().getSize(); i += 1) { // Se recorren las aristas que salen del origen.
+            Arista<E> arco = origen.getArcosSalida().get(i); // Se saca la arista en la que se está.
+            if (arco.getRelacion().equals(relacion)) { // Se comprueba si su relación es la relación que se busca.
+                resultado.add(arco.getDestino().getDato()); // Si lo es, se añade a resultado.
+            }
+        }
+        return resultado; // Después de revisar las aristas, se retorna el resultado.
+    }
+
+
+
+
+    // Metodo que retorna los nodos origen que apuntan a un destino con una relación determinada.
+    public Lista<E> getOrigenesRelacionados(E destinoDato, String relacion) {
+        Lista<E> resultado = new Lista<>(); // Se crea la lista resultado.
+        Vertice<E> destino = buscarVertice(destinoDato); // Se busca el destino.
+        if (destino == null) { // Si no existe.
+            return resultado; // Se devuelve vacía.
+        }
+        for (int i = 0; i < aristas.getSize(); i += 1) { // Se recorren todas las aristas.
+            Arista<E> arista = aristas.get(i); // Se guarda la arista actual.
+            if (arista.getDestino().equals(destino) && arista.getRelacion().equals(relacion)) { // Si coincide.
+                resultado.add(arista.getOrigen().getDato()); // Se añade el origen.
+            }
+        }
+        return resultado; // Se devuelve.
+    }
+
+
+
+    // Metodo para ver la relación concreta entre dos vértices.
+    public boolean tieneRelacion(E origenDato, E destinoDato, String relacion) {
+        Vertice<E> origen = buscarVertice(origenDato); // Se busca el origen.
+        if (origen == null) { // Si no existe.
+            return false; // Se retorna false.
+        }
+        for (int i = 0; i < origen.getArcosSalida().getSize(); i += 1) { // Se recorren aristas.
+            Arista<E> arista = origen.getArcosSalida().get(i);
+            if (arista.getDestino().getDato().equals(destinoDato) && arista.getRelacion().equals(relacion)) { // Si el origen y destino tienen la relación concreta.
+                return true; // Se retorna.
+            }
+        }
+        return false; // No existe.
+    }
+
+
+    // Se ve con qué vértices mantiene una relación determinada.
+    public Lista<E> getObjetos(E sujeto, String relacion) {
+        Lista<E> resultado = new Lista<>(); // Se crea la lista resultado.
+        Vertice<E> v = buscarVertice(sujeto); // Se busca el sujeto en los vértices.
+        if (v == null) {return resultado;} // Si el sujeto no existe, devolvemos la lista vacía.
+        for (int i = 0; i < v.getArcosSalida().getSize(); i++) {
+            Arista<E> a = v.getArcosSalida().get(i); // Se guarda la arista actual.
+            if (a.getRelacion().equals(relacion)) { // Se ve si la relación coincide.
+                resultado.add(a.getDestino().getDato()); // Si coinciden, se devuelve el dato del vértice destino a la lista.
+            }
+        }
+        return resultado; // Se retorna la lista.
+    }
+
+
+    // Ver con qué vértices que son origen de la arista que les llega tienen una relación determinada.
+    public Lista<E> getSujetoPorRelacion(E objeto, String relacion) {
+        Lista<E> resultado = new Lista<>(); // Se crea la lista resultado.
+        for (int i = 0; i < aristas.getSize(); i++) { //Se recorren las aristas.
+            Arista<E> a = aristas.get(i); // Se guarda la arista actual.
+            if (a.getDestino().getDato().equals(objeto) && a.getRelacion().equals(relacion)) { // Se ve si el destino es el que se busca y si tienen una relación determinada.
+                resultado.add(a.getOrigen().getDato()); // Si está completo se añade el origen a la lista.
+            }
+        }
+        return resultado; // Se devuelve la lista.
+    }
+
+
+
+
+//----------------------- Respuestas sobre la relación de físicos -----------------
+
+    // Metodo para saber si es físico.
+    public boolean esFisico(E persona) {
+        Lista<E> tipos = getObjetos(persona, "es_tipo"); // Se buscan los objetos con la relación "es_tipo".
+        for (int i = 0; i < tipos.getSize(); i++) { // Se recorren los tipos de los que tengan la relación.
+            if (tipos.get(i).toString().equals("físico")) { // Si es físico.
+                return true; // Se retorna true.
+            }
+        }
+        return false; // Si no está, se retorna false.
+    }
+
+
+    // Se mira qué físicos han nacido en la misma ciudad que alguien.
+    public Lista<E> fisicosEnMismaCiudadQue(E persona) {
+        Lista<E> resultado = new Lista<>(); // Se crea la lista resultado.
+        Lista<E> ciudades = getObjetos(persona, "nace_en"); // Se ver dónde ha nacido ese alguien.
+        if (ciudades.isEmpty()) return resultado; // Si no tiene ciudad se retorna una lista vacía.
+        E ciudadEinstein = ciudades.get(0); // Se guarda la ciudad encontrada.
+        Lista<E> personas = getSujetoPorRelacion(ciudadEinstein, "nace_en"); // Se buscan los que han nacido en esa ciudad.
+        for (int i = 0; i < personas.getSize(); i++) { // Se miran las personas.
+            E p = personas.get(i);
+            if (esFisico(p)) { // Se comprueba si "p" es físico.
+                resultado.add(p); // Si lo es se añade a la lista.
+            }
+        }
+        return resultado; // Se retorna la lista.
+    }
+
+
+    // Se ve en qué ciudad han nacido los nobel.
+    public Lista<E> lugaresNacimientoNobel() {
+        Lista<E> resultado = new Lista<>(); // Se crea una lista.
+        for (int i = 0; i < vertices.getSize(); i++) { // Se recorren los vértices.
+            E v = vertices.get(i).getDato();
+            Lista<E> premios = getObjetos(v, "premio"); // Se buscan los premios relacionados con la persona.
+            boolean tieneNobel = false; //
+            for (int j = 0; j < premios.getSize(); j++) { // Recorre los premios de la persona.
+                if (premios.get(j).toString().equals("nobel")) { // Si alguno es el nobel.
+                    tieneNobel = true; // Se marca como que lo tiene.
+                    break; // Nos salimos a ver otra persona.
+                }
+            }
+            if (tieneNobel) { // Si tiene nobel.
+                Lista<E> lugares = getObjetos(v, "nace_en"); // Se busca donde nació.
+                for (int j = 0; j < lugares.getSize(); j++) { // Se mira.
+                    if (!resultado.contains(lugares.get(j))) { // Si no está añadido el lugar a la lista.
+                        resultado.add(lugares.get(j)); // Se añade.
+                    }
+                }
+            }
+        }
+        return resultado; // Se retorna la lista.
+    }
+
+
+
+
+
+//----------------------------- Leer archivos JSON ------------------
+
+    public void cargarDesdeJSON(String rutaArchivo) {
+        try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
+            // Se abre el archivo para leerlo y se lee.
+            StringBuilder sb = new StringBuilder(); // Se pone lo que haya en el archivo.
+            String linea; // Línea para guardar lo que se lee.
+            while ((linea = br.readLine()) != null) { // Se lee el archivo línea por línea.
+                sb.append(linea); // Se añade cada línea.
+            }
+            procesarJSON(sb.toString()); // Pasa el sb a texto para poder leelo.
+        } catch (FileNotFoundException e) { // Si no existe se captura el error.
+            System.out.println("El fichero no existe.");
+        } catch (IOException e) { // Se capturan los errores de entrada/salida del archivo.
+            System.out.println("Error leyendo archivo.");
+        }
+    }
+
+    private void procesarJSON(String json) {
+        String[] partes = json.split("\\{"); // Se separa el JSON cuando se encuentra un "{".
+        for (int i = 0; i < partes.length; i += 1) { // Recorre el JSON.
+            String parte = partes[i]; // Guarda la parte que se haya separado.
+            if (parte.contains("\"s\"")) { // Si es un triplete.
+                String sujeto = extraer(parte, "\"s\""); // Se saca el sujeto.
+                String predicado = extraer(parte, "\"p\""); // Se saca la relación.
+                String objeto = extraer(parte, "\"o\""); // Se saca el objeto.
+                buscarOVertice(sujeto); // Se busca en el grafo si existe.
+                buscarOVertice(objeto); // Se busca en el grafo si existe.
+                addArista((E) sujeto, (E) objeto, predicado, 1.0); // Se añade la arista al grafo.
+            }
+        }
+    }
+
+
+
+
+
+//-------------------------------- Ciclos y lazos --------------------------------------------------
+
+    // Metodo para ver si el grafo tiene ciclos.
+    public boolean tieneCiclos() {
+        Lista<Vertice<E>> visitados = new Lista<>(); // Vértices ya visitados. .
+        Lista<Vertice<E>> enRecursion = new Lista<>(); // Vértices en la rama actual del DFS.
+        for (int i = 0; i < vertices.getSize(); i += 1) { // Se recorren los vértices.
+            Vertice<E> vertice = vertices.get(i); // Se guarda el vértice actual.
+            if (!visitados.contains(vertice)) { // Si aún no se ha visitado.
+                if (TieneCiclo(vertice, visitados, enRecursion)) { // Si se detecta que hay un ciclo.
+                    return true; // El grafo tiene ciclos.
+                }
+            }
+        }
+        return false; // Si no se encontró ninguno se retorna false.
+    }
+
+
+    // Metodo auxiliar para detectar ciclos con DFS.
+    private boolean TieneCiclo(Vertice<E> actual, Lista<Vertice<E>> visitados, Lista<Vertice<E>> enRecursion) {
+        visitados.add(actual); // Se marca como visitado.
+        enRecursion.add(actual); // Se añade a la rama actual.
+        for (int i = 0; i < actual.getArcosSalida().getSize(); i += 1) { // Se recorren las aristas salientes.
+            Vertice<E> vecino = actual.getArcosSalida().get(i).getDestino(); // Se obtiene el vecino.
+            if (!visitados.contains(vecino)) { // Si no se ha visitado todavía.
+                if (TieneCiclo(vecino, visitados, enRecursion)) { // Si hay ciclo en profundidad.
+                    return true; // Se retorna true.
+                }
+            }
+            else if (enRecursion.contains(vecino)) { // Si está en la rama actual.
+                return true; // Hay ciclo.
+            }
+        }
+        enRecursion.remove(enRecursion.index(actual)); // Se quita de la rama actual.
+        return false; // No se encontró ciclo y se retorna false.
+    }
+
+
+    // Metodo para ver si el grafo tiene lazos.
+    public boolean tieneLazos() {
+        for (int i = 0; i < aristas.getSize(); i++) { // Se miran todas las aristas.
+            Arista<E> a = aristas.get(i); // Se guarda la arista.
+            if (a.getOrigen().equals(a.getDestino())) { // Si de las aristas que salen del origen alguna tiene como destino el origen.
+                return true; // Es que hay una lazo.
+            }
+        }
+        return false; // Si no se retorna false.
+    }
+
+
+
+
+
+//------------------------ PRIM -----------------------------------------------------------
+
+
+    // Metodo para obtener el árbol de expansión mínima con Prim.
+    public Grafo<E> PRIM(E origenDato) {
+        Vertice<E> origen = buscarVertice(origenDato); // Se busca el origen.
+        if (origen == null) { // Si no existe.
+            return null; // Nos salimos.
+        }
+        Grafo<E> mst = new Grafo<>(); // Grafo resultado.
+        Lista<Vertice<E>> visitados = new Lista<>(); // Vértices ya incluidos en el MST.
+        Lista<Arista<E>> heap = new Lista<>(); // Lista de aristas candidatas.
+        visitados.add(origen); // Se marca el origen como visitado.
+        mst.addVertice(origen.getDato()); // Se añade al MST.
+        for (int i = 0; i < origen.getArcosSalida().getSize(); i += 1) { // Se recorren las aristas.
+            heap.add(origen.getArcosSalida().get(i)); // Se añaden.
+        }
+        while (!heap.isEmpty()) { // Mientras haya aristas candidatas.
+            Arista<E> mejor = extraerAristaMenorPeso(heap); // Se escoge la de menor peso.
+            Vertice<E> destino = mejor.getDestino(); // Se mira su destino.
+            if (!visitados.contains(destino)) { // Si el destino no está en el MST.
+                visitados.add(destino); // Se marca como visitado.
+                mst.addVertice(destino.getDato()); // Se añade destino.
+                mst.addArista(mejor.getOrigen().getDato(), destino.getDato(), mejor.getRelacion(), mejor.getCoste());
+                for (int i = 0; i < destino.getArcosSalida().getSize(); i += 1) { // Se añaden nuevas aristas candidatas.
+                    Arista<E> nueva = destino.getArcosSalida().get(i);
+                    if (!visitados.contains(nueva.getDestino())) { // Solo si van a vértices no visitados.
+                        heap.add(nueva); // Se añaden.
+                    }
+                }
+            }
+        }
+        return mst; // Se devuelve el grafo. .
+    }
+
+
+
+    // Metodo para buscar la arista de menor peso de una lista.
+    private Arista<E> extraerAristaMenorPeso(Lista<Arista<E>> aristas) {
+        Arista<E> mejor = aristas.get(0); // Se toma la primera.
+        for (int i = 1; i < aristas.getSize(); i += 1) { // Se busca la mejor.
+            if (aristas.get(i).getCoste() < mejor.getCoste()) { // Si tiene menor coste.
+                mejor = aristas.get(i); // Pasa a ser la mejor.
+            }
+        }
+        aristas.remove(aristas.index(mejor)); // Se elimina de la lista.
+        return mejor; // Se devuelve.
+    }
+
+
+
+    // Metodo para convertir el grafo en no dirigido añadiendo las aristas inversas.
+    private void hacerNoDirigido() {
+        Lista<Arista<E>> nuevasAristas = new Lista<>(); // Se crea una lista.
+        for (int i = 0; i < aristas.getSize(); i += 1) { // Se recorren todas las aristas.
+            Arista<E> actual = aristas.get(i); // Se guarda la arista actual.
+            E origen = actual.getOrigen().getDato();
+            E destino = actual.getDestino().getDato();
+            if (!existeArista(destino, origen)) { // Si no existe la inversa.
+                nuevasAristas.add(new Arista<>(buscarVertice(destino), buscarVertice(origen), actual.getRelacion(), actual.getCoste())); // Se crea.
+            }
+        }
+        for (int i = 0; i < nuevasAristas.getSize(); i += 1) { // Se añaden las nuevas aristas.
+            Arista<E> nueva = nuevasAristas.get(i);
+            aristas.add(nueva);
+            nueva.getOrigen().addArcoSalida(nueva);
+        }
+    }
+
+
+    // Metodo para ver si existe una arista entre dos vértices.
+    private boolean existeArista(E origenDato, E destinoDato) {
+        Vertice<E> origen = buscarVertice(origenDato); // Se busca el origen.
+        if (origen == null) { // Si no existe.
+            return false;
+        }
+        for (int i = 0; i < origen.getArcosSalida().getSize(); i += 1) { // Se recorren sus aristas.
+            Arista<E> arista = origen.getArcosSalida().get(i); // Se guarda la arista.
+            if (arista.getDestino().getDato().equals(destinoDato)) { // Si llega al destino buscado.
+                return true; // Se retorna true.
+            }
+        }
+        return false; // Si no existe, se retorna false.
+    }
+
+
+
+
+
+
+//-------------------------------------------- KRUSKAL ----------------------------------------------------
+
+
+    // Metodo para obtener el árbol de expansión mínima con Kruskal.
+    public Grafo<E> KRUSKAL() {
+        Grafo<E> mst = new Grafo<>(); // Se crea un grafo.
+        Lista<Arista<E>> ordenadas = copiarAristasSinDuplicados(); // Aristas ordenadas.
+        ordenarAristasPorPeso(ordenadas); // Se ordenan las aristas por peso.
+        Lista<Vertice<E>> representantes = new Lista<>(); // Se crea la Union-Find.
+        for (int i = 0; i < vertices.getSize(); i += 1) { // Se recorren los vértices.
+            representantes.add(vertices.get(i)); //
+            mst.addVertice(vertices.get(i).getDato()); // Se añade el vértice al grafo.
+        }
+        for (int i = 0; i < ordenadas.getSize() && cantidadConjuntos(representantes) > 1; i += 1) { // Se recorren las aristas.
+            Arista<E> arista = ordenadas.get(i); // Se guarda la arista.
+            Vertice<E> u = arista.getOrigen(); // Se saca el origen.
+            Vertice<E> v = arista.getDestino(); // Se saca el destino.
+            if (findUF(u, representantes) != findUF(v, representantes)) { // Si son de conjuntos distintos no hacen un ciclo.
+                mst.addArista(u.getDato(), v.getDato(), arista.getRelacion(), arista.getCoste()); // Se añade la arista al grafo.
+                unionUF(u, v, representantes); // Se unen los conjuntos.
+            }
+        }
+        return mst; // Se devuelve el grafo.
+    }
+
+
+
+
+    // Metodo para copiar aristas evitando duplicados inversos.
+    private Lista<Arista<E>> copiarAristasSinDuplicados() {
+        Lista<Arista<E>> resultado = new Lista<>(); // Se crea una lista.
+        for (int i = 0; i < aristas.getSize(); i += 1) { // Se recorren las aristas.
+            Arista<E> actual = aristas.get(i); // Se guarda la arista.
+            boolean redundante = false; // Si está duplicada se marca.
+            for (int j = 0; j < resultado.getSize(); j += 1) { // La compara con las que están en resultado.
+                Arista<E> guardada = resultado.get(j); //Se guarda la arista.
+                boolean mismaConexion = actual.getOrigen().equals(guardada.getDestino()) && actual.getDestino().equals(guardada.getOrigen()); // Se comprueba si es la conexión a la inversa.
+                boolean mismoPeso = actual.getCoste() == guardada.getCoste(); // Se mira si tienen el mismo peso.
+                if (mismaConexion && mismoPeso) { // Si son la misma pero inversa.
+                    redundante = true; // Se marca como redundante.
+                    break; // Nos salimos.
+                }
+            }
+            if (!redundante) { // Si no es redundante, no estaba guardada.
+                resultado.add(actual); // Se añade a la lista.
+            }
+        }
+        return resultado; // Se retorna la lista.
+    }
+
+
+
+    // Metodo para ordenar aristas por peso ascendente.
+    private void ordenarAristasPorPeso(Lista<Arista<E>> lista) {
+        for (int i = 0; i < lista.getSize() - 1; i += 1) { // Se ordenan.
+            for (int j = i + 1; j < lista.getSize(); j += 1) { // Se comparan.
+                if (lista.get(j).getCoste() < lista.get(i).getCoste()) { // Si se ncuentra una arista menor.
+                    Arista<E> temp = lista.get(i); // Se cambia la posición.
+                    lista.set(i, lista.get(j)); // ""                  "".
+                    lista.set(j, temp); // ""                           "".
+                }
+            }
+        }
+    }
+
+
+    // Metodo de encontrar de Union-Find.
+    private Vertice<E> findUF(Vertice<E> vertice, Lista<Vertice<E>> representantes) {
+        int indice = vertices.index(vertice); // Se mira el índice del vértice.
+        while (!representantes.get(indice).equals(vertices.get(indice))) { // Mientras que no sea el representante.
+            indice = vertices.index(representantes.get(indice)); // Se sube.
+        }
+        return representantes.get(indice); // Se retorna el representante.
+    }
+
+
+    // Metodo de unir de Union-Find.
+    private void unionUF(Vertice<E> a, Vertice<E> b, Lista<Vertice<E>> representantes) {
+        Vertice<E> repA = findUF(a, representantes); // Se toma el representante.
+        Vertice<E> repB = findUF(b, representantes); // Se toma el otro representante.
+        int indiceRepB = vertices.index(repB); // Se mira el índice de B.
+        representantes.set(indiceRepB, repA); // B se dirige al representante de A.
+    }
+
+
+    // Metodo para contar cuántos conjuntos disjuntos hay en Union-Find.
+    private int cantidadConjuntos(Lista<Vertice<E>> representantes) {
+        Lista<Vertice<E>> distintos = new Lista<>(); // Lista de los representantes.
+        for (int i = 0; i < representantes.getSize(); i += 1) { // Se recorren los vértices.
+            Vertice<E> rep = findUF(vertices.get(i), representantes); // Se saca el representante.
+            if (!distintos.contains(rep)) { // Si no estaba contado.
+                distintos.add(rep); // Se añade.
+            }
+        }
+        return distintos.getSize(); // Se retorna el número de conjuntos.
+    }
+
+
+
+//----------------------- Imprimir el grafo -----------------------------------------------------
+
+    // Metodo para imprimir el grafo
+    public void imprimirGrafo() {
+        if (vertices.isEmpty()) { // Si no hay vértices.
+            System.out.println("El grafo está vacío.");
+            return; // Nos salimos.
+        }
+        for (int i = 0; i < vertices.getSize(); i += 1) { // Se recorren todos los vértices.
+            Vertice<E> vertice = vertices.get(i); // Se guarda el vértice actual.
+            System.out.println(vertice.getDato() + ":"); // Se imprime el vértice.
+            if (vertice.getArcosSalida().isEmpty()) { // Si no tiene aristas que salgan del vértice.
+                System.out.println("   (Sin aristas)");
+                continue; // Se pasa al siguiente vértice.
+            }
+            for (int j = 0; j < vertice.getArcosSalida().getSize(); j += 1) { // Se recorren las aristas.
+                Arista<E> arista = vertice.getArcosSalida().get(j); // Se guarda la arista actual.
+                System.out.println("   |--[" + arista.getRelacion() + ", coste=" + arista.getCoste() + "]--> " + arista.getDestino().getDato());
+            }
+        }
+    }
+
+
+
+//-------------------------------- Uso general -------------------------------
+
+    // Metodo que busca un vértice, y si no existe, lo crea.
+    private Vertice<E> buscarOVertice(String dato) {
+        for (int i = 0; i < vertices.getSize(); i += 1) { // Se recorren los vértices del grafo.
+            Vertice<E> v = vertices.get(i); // Se guarda el vértice.
+            if (v.getDato().toString().equals(dato)) { // Se mira si el dato es el que queremos.
+                return v; // Si es ese, se retorna.
+            }
+        }
+        Vertice<E> nuevo = new Vertice<>((E) dato); // Si no está, se crea.
+        vertices.add(nuevo); // Se añade.
+        return nuevo; // Se retorna el vértice.
+    }
+
+
+    // Se saca un valor de un texto por una clave.
+    private String extraer(String texto, String clave) {
+        int ini = texto.indexOf(clave); // Se busca donde aparece "clave" en el texto.
+        if (ini == -1) return ""; // Si no se ha encontrado "clave" nos salimos.
+        ini = texto.indexOf(":", ini); // Desde "clave" se buscan ":".
+        int fin = texto.indexOf("\"", ini + 2); // Se buscan las comillas.
+        return texto.substring(ini + 2, fin);// Se devuelve l texto.
+    }
+
+
+
+
+    // Metodo para obtener todos los nodos de un tipo determinado según el prefijo.
+    public Lista<E> getNodosPorPrefijo(String prefijo) {
+        Lista<E> resultado = new Lista<>(); // Se crea la lista.
+        for (int i = 0; i < vertices.getSize(); i += 1) { // Se recorren los vértices.
+            E dato = vertices.get(i).getDato(); // Se guarda el dato.
+            if (dato.toString().startsWith(prefijo)) { // Si tiene el prefijo.
+                resultado.add(dato); // Se añade a la lista.
+            }
+        }
+        return resultado; // Se devuelve la lista.
+    }
+
+}
+
+
+
+
+
+
+
+// -------------------------------------- Main_Test_Grafo --------------------------------
+package ArbolBinarioDeBúsqueda_y_Grafo.Grafo;
+
+import ArbolBinarioDeBúsqueda_y_Grafo.Lista.Lista;
+
+public class Main_Test_Grafo {
+
+    public static void main(String[] args) {
+
+        System.out.println("------ TEST 1: Grafo vacío ------");
+        Grafo<String> g1 = new Grafo<>();
+        System.out.println("BFS en grafo vacío:");
+        System.out.println(g1.BFS("A"));
+        System.out.println("Dijkstra en grafo vacío:");
+        System.out.println(g1.getCaminoMinimo("A", "B"));
+        System.out.println("¿Es disjunto?: " + g1.isDisjunto()); // false (no hay vértices)
+
+
+
+        System.out.println("\n------ TEST 2: Vértices duplicados ------");
+        Grafo<String> g2 = new Grafo<>();
+        g2.addVertice("A");
+        g2.addVertice("A"); // Vértice duplicado.
+        g2.addVertice("B");
+        System.out.println("Contiene A: " + g2.contieneVertice("A"));
+        System.out.println("Contiene B: " + g2.contieneVertice("B"));
+
+
+
+        System.out.println("\n------ TEST 3: Aristas con vértices que no existen ------");
+        Grafo<String> g3 = new Grafo<>();
+        g3.addVertice("A");
+        g3.addArista("A", "B", "conecta", 2.0); // destino no existe
+        g3.addArista("X", "A", "error", 1.0);   // origen no existe
+
+
+
+        System.out.println("\n------ TEST 4: Grafo normal ------");
+        Grafo<String> g4 = new Grafo<>();
+        g4.addVertice("A");
+        g4.addVertice("B");
+        g4.addVertice("C");
+        g4.addVertice("D");
+        g4.addArista("A", "B", "AB", 1);
+        g4.addArista("B", "C", "BC", 2);
+        g4.addArista("A", "C", "AC", 5);
+        g4.addArista("C", "D", "CD", 1);
+        System.out.println("Tripletas:");
+        g4.imprimirTripletas();
+        System.out.println("Las conexiones del grafo son:");
+        g4.imprimirGrafo();
+
+
+
+        System.out.println("\n------ TEST 5: BFS ------");
+        System.out.println("BFS desde el vértice A:");
+        System.out.println(g4.BFS("A"));
+        System.out.println("BFS desde un vértice inexistente:");
+        System.out.println(g4.BFS("Z")); // null
+
+
+
+        System.out.println("\n------ TEST 6: Dijkstra ------");
+        System.out.println("Camino mínimo de A -> D:");
+        System.out.println(g4.getCaminoMinimo("A", "D"));
+        System.out.println("Camino mínimo de A -> nodo inexistente:");
+        System.out.println(g4.getCaminoMinimo("A", "Z")); // null
+
+
+
+        System.out.println("\n------ TEST 7: RELACIONES ------");
+        g4.addTripleta("A", "amigo", "D");
+        g4.addTripleta("A", "enemigo", "C");
+        g4.addTripleta("A", "amigo", "B");
+        System.out.println("Relación de 'amigo' desde A:");
+        System.out.println(g4.getDestinosRelacionados("A", "amigo"));
+        System.out.println("Relación inexistente:");
+        System.out.println(g4.getDestinosRelacionados("A", "familia"));
+
+
+
+        System.out.println("\n------ TEST 8: Grafo disjunto ------");
+        Grafo<String> g5 = new Grafo<>();
+        g5.addVertice("A");
+        g5.addVertice("B");
+        g5.addVertice("C");
+        g5.addVertice("D");
+        g5.addArista("A", "B", "AB", 1);
+        // C y D quedan desconectados
+        System.out.println("¿Es disjunto?: " + g5.isDisjunto());
+
+
+
+        System.out.println("\n------ TEST 9: Camino más corto con grafo disjunto ------");
+        Grafo<String> g6 = new Grafo<>();
+        g6.addVertice("A");
+        g6.addVertice("B");
+        g6.addVertice("C");
+        g6.addArista("A", "B", "AB", 1);
+        // C aislado
+        System.out.println("Camino A -> C (no existe):");
+        System.out.println(g6.getCaminoMinimo("A", "C"));
+
+
+
+        System.out.println("\n------ TEST 10: Grafo extenso ------");
+        Grafo<String> g7 = new Grafo<>();
+        for (char c = 'A'; c <= 'F'; c++) { // Se añaden los vértices desde A hasta F.
+            g7.addVertice(String.valueOf(c));
+        }
+        g7.addArista("A", "B", "1", 2);
+        g7.addArista("A", "C", "2", 4);
+        g7.addArista("B", "D", "3", 1);
+        g7.addArista("C", "D", "4", 1);
+        g7.addArista("D", "E", "5", 3);
+        g7.addArista("E", "F", "6", 1);
+        System.out.println("BFS desde A:");
+        System.out.println(g7.BFS("A"));
+        System.out.println("Camino mínimo de A -> F:");
+        System.out.println(g7.getCaminoMinimo("A", "F"));
+
+
+        System.out.println("\n------ TEST 11: Camino mínimo entre A y B ------");
+
+        Grafo<String> g8 = new Grafo<>();
+        g8.addVertice("A");
+        g8.addVertice("B");
+        g8.addVertice("C");
+        g8.addVertice("D");
+        g8.addArista("A", "B", "AB", 1);
+        g8.addArista("B", "C", "BC", 1);
+        g8.addArista("A", "D", "AD", 5);
+        g8.addArista("C", "D", "CD", 1);
+        System.out.println("Camino mínimo A -> D:");
+        System.out.println(g8.getCaminoMinimo("A", "D"));
+
+
+
+        System.out.println("\n------ TEST 12: Grafo disjunto con dos componentes ------");
+
+        Grafo<String> g9 = new Grafo<>();
+        g9.addVertice("A");
+        g9.addVertice("B");
+        g9.addVertice("C");
+        g9.addVertice("D");
+        g9.addArista("A", "B", "AB", 1);
+        // C y D quedan aislados
+        System.out.println("¿Es disjunto?: " + g9.isDisjunto());
+
+
+        System.out.println("\n------ TEST 13: Ontología ------");
+
+        Grafo<String> nobel = new Grafo<>();
+        // Personas
+        nobel.addTripleta("persona:Einstein", "nace_en", "ciudad:Ulm");
+        nobel.addTripleta("persona:Newton", "nace_en", "ciudad:Woolsthorpe");
+        // Físicos en mismas ciudades
+        nobel.addTripleta("persona:Físico_X", "nace_en", "ciudad:Ulm");
+        nobel.addTripleta("persona:Físico_Y", "nace_en", "ciudad:Woolsthorpe");
+        System.out.println("Físicos que nacen en la misma ciudad que Einstein:");
+        Lista<String> ciudadesEinstein = nobel.getDestinosRelacionados("persona:Einstein", "nace_en");
+        for (int i = 0; i < ciudadesEinstein.getSize(); i++) {
+            String ciudad = ciudadesEinstein.get(i);
+            Lista<String> personas = nobel.getOrigenesRelacionados(ciudad, "nace_en");
+            for (int j = 0; j < personas.getSize(); j++) {
+                String p = personas.get(j);
+                if (!p.equals("persona:Einstein")) {
+                    System.out.println(p + " nació en " + ciudad);
+                }
+            }
+        }
+
+        System.out.println("\n------ TEST 14: Ciudad natal (Eistein) ------");
+
+        Grafo<String> g12 = new Grafo<>();
+        g12.addTripleta("persona:Einstein", "nace_en", "ciudad:Ulm");
+        g12.addTripleta("persona:Max_Planck", "nace_en", "ciudad:Ulm");
+        g12.addTripleta("persona:Niels_Bohr", "nace_en", "ciudad:Copenhague");
+        Lista<String> ciudades = g12.getDestinosRelacionados("persona:Einstein", "nace_en");
+        for (int i = 0; i < ciudades.getSize(); i++) {
+            String ciudad = ciudades.get(i);
+            Lista<String> candidatos = g12.getOrigenesRelacionados(ciudad, "nace_en");
+            for (int j = 0; j < candidatos.getSize(); j++) {
+                String c = candidatos.get(j);
+                if (!c.equals("persona:Einstein")) {
+                    System.out.println("Respuesta: " + c);
+                }
+            }
+        }
+
+
+        System.out.println("\n------ TEST 15: Detectar ciclos ------");
+
+        Grafo<String> g13 = new Grafo<>();
+        g13.addVertice("A");
+        g13.addVertice("B");
+        g13.addVertice("C");
+        g13.addArista("A", "B", "AB", 1);
+        g13.addArista("B", "C", "BC", 1);
+        g13.addArista("C", "A", "CA", 1); // Cierra ciclo
+        System.out.println("¿Tiene ciclos?: " + g13.tieneCiclos());
+
+
+
+        System.out.println("\n------ TEST 16: Detectar lazos ------");
+
+        Grafo<String> g14 = new Grafo<>();
+        g14.addVertice("A");
+        g14.addArista("A", "A", "self", 1);
+        System.out.println("¿Tiene lazos?: " + g14.tieneLazos());
+
+
+
+        System.out.println("\n------ TEST 17: PRIM ------");
+
+        Grafo<String> g15 = new Grafo<>();
+        g15.addVertice("A");
+        g15.addVertice("B");
+        g15.addVertice("C");
+        g15.addVertice("D");
+        g15.addArista("A", "B", "AB", 1);
+        g15.addArista("B", "A", "BA", 1);
+        g15.addArista("A", "C", "AC", 4);
+        g15.addArista("C", "A", "CA", 4);
+        g15.addArista("B", "C", "BC", 2);
+        g15.addArista("C", "B", "CB", 2);
+        g15.addArista("B", "D", "BD", 5);
+        g15.addArista("D", "B", "DB", 5);
+        g15.addArista("C", "D", "CD", 1);
+        g15.addArista("D", "C", "DC", 1);
+        Grafo<String> prim = g15.PRIM("A");
+        System.out.println("El árbol de expansión mínima es (PRIM):");
+        prim.imprimirGrafo();
+
+
+
+        System.out.println("\n------ TEST 18: KRUSKAL ------");
+
+        Grafo<String> kruskal = g15.KRUSKAL();
+        System.out.println("Árbol de expansión mínima (KRUSKAL):");
+        kruskal.imprimirGrafo();
+
+
+
+        System.out.println("\n------ TEST 19: es_tipo ------");
+
+        Grafo<String> ont = new Grafo<>();
+        ont.addTripleta("Einstein", "es_tipo", "fisico");
+        ont.addTripleta("Newton", "es_tipo", "fisico");
+        ont.addTripleta("Tesla", "es_tipo", "ingeniero");
+        System.out.println("¿Einstein es físico?: " + ont.esFisico("Einstein"));
+        System.out.println("¿Tesla es físico?: " + ont.esFisico("Tesla"));
+
+
+
+        System.out.println("\n------ TEST 20: Físicos de la misma ciudad ------");
+
+        ont.addTripleta("Einstein", "nace_en", "Ulm");
+        ont.addTripleta("Planck", "nace_en", "Ulm");
+        ont.addTripleta("Planck", "es_tipo", "fisico");
+        ont.addTripleta("Gauss", "nace_en", "Brunswick");
+        ont.addTripleta("Gauss", "es_tipo", "matematico");
+        System.out.println("Físicos nacidos en la misma ciudad que Einstein:");
+        System.out.println(ont.fisicosEnMismaCiudadQue("Einstein"));
+
+
+
+        System.out.println("\n------ TEST 21: Ciudades natales de los nobel ------");
+
+        ont.addTripleta("Einstein", "premio", "nobel");
+        ont.addTripleta("Curie", "premio", "nobel");
+        ont.addTripleta("Curie", "nace_en", "Varsovia");
+        System.out.println("Lugares de nacimiento de personas con Nobel:");
+        System.out.println(ont.lugaresNacimientoNobel());
+
+
+
+        System.out.println("\n------ TEST 22: getObjetos / getSujetoPorRelacion ------");
+
+        System.out.println("Objetos de Einstein con relación nace_en:");
+        System.out.println(ont.getObjetos("Einstein", "nace_en"));
+        System.out.println("Sujetos que nacen en Ulm:");
+        System.out.println(ont.getSujetoPorRelacion("Ulm", "nace_en"));
+
+
+
+        System.out.println("\n------ TEST 23: tieneRelacion ------");
+
+        System.out.println("¿Einstein nace en Ulm?: "
+                + ont.tieneRelacion("Einstein", "Ulm", "nace_en"));
+        System.out.println("¿Einstein nace en Madrid?: "
+                + ont.tieneRelacion("Einstein", "Madrid", "nace_en"));
+
+
+
+
+
+
+        System.out.println("\n------ TEST 24: Carga desde JSON de un grafo conexo ------");
+
+        Grafo<String> jsonConexo = new Grafo<>();
+        jsonConexo.cargarDesdeJSON("src/main/Rutas_grafo/grafoConexo.json");
+        jsonConexo.imprimirGrafo();
+        System.out.println("¿Es disjunto?: " + jsonConexo.isDisjunto());
+
+
+
+        System.out.println("\n------ TEST 25: Carga desde JSON de un grafo disjunto ------");
+
+        Grafo<String> jsonDisjunto = new Grafo<>();
+        jsonDisjunto.cargarDesdeJSON("src/main/Rutas_grafo/grafoDisjunto.json");
+        jsonDisjunto.imprimirGrafo();
+        System.out.println("¿Es disjunto?: " + jsonDisjunto.isDisjunto());
+
+
+
+        System.out.println("\n------ TEST 26: Carga desde JSON de los nobel ------");
+
+        Grafo<String> jsonNobel = new Grafo<>();
+        jsonNobel.cargarDesdeJSON("src/main/Rutas_grafo/nobel.json");
+        jsonNobel.imprimirGrafo();
+        System.out.println("¿Einstein es físico?: " + jsonNobel.esFisico("Einstein"));
+        System.out.println("Físicos nacidos en la misma ciudad que Einstein:");
+        System.out.println(jsonNobel.fisicosEnMismaCiudadQue("Einstein"));
+        System.out.println("Lugares de nacimiento de premios Nobel:");
+        System.out.println(jsonNobel.lugaresNacimientoNobel());
+
+
+
+
+
+
+        System.out.println("------ Fin del Main_Test ------");
+    }
+}
+
+
+
+
+
+
+
+
+
+// --------------------------------------- Vértice ------------------------------
+
+package ArbolBinarioDeBúsqueda_y_Grafo.Grafo;
+
+import ArbolBinarioDeBúsqueda_y_Grafo.Lista.Lista;
+
+public class Vertice<E> {
+
+    private E dato;
+    private Lista<Arista<E>> arcosSalida; // Es la arista que sale del vértice.
+    private Lista<Arista<E>> arcosEntrada; // Es la arista que llega al vértice.
+
+
+
+    public Vertice(E dato) { // Constructor del vértice.
+        this.dato = dato;
+        arcosSalida = new Lista<>();
+        arcosEntrada = new Lista<>();
+    }
+
+
+
+    // Getter y setter de dato.
+    public E getDato() {
+        return dato;
+    }
+    public void setDato(E dato) {
+        this.dato = dato;
+    }
+
+
+
+    // Getters de arista de salida y de entrada.
+    public Lista<Arista<E>> getArcosSalida() { return arcosSalida;}
+    public Lista<Arista<E>> getArcosEntrada() {
+        return arcosEntrada;
+    }
+
+
+
+    // Metodo add para añadir elementos a las listas de ArcoSalida y ArcoEntrada.
+    public void addArcoSalida(Arista<E> arista) {
+        arcosSalida.add(arista);
+    }
+    public void addArcoEntrada(Arista<E> arista) {
+        arcosEntrada.add(arista);
+    }
+
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null || !(obj instanceof Vertice)) { // Si no existe o no es un vértice.
+            return false; // Retornamos false.
+        }
+        Vertice otro = (Vertice) obj; //
+        return this.dato.equals(otro.dato); // Se comparan los vértiices.
+    }
+
+
+    @Override
+    public String toString() {
+        return String.valueOf(dato);
+    } // Se pasa el dato a String.
+}
+
+
+
+
+
+
+
+
+//---------------------------------------------------------------- Lista (Clase y nodo) ------------------------------------------------------
+
+
+
+
+package ArbolBinarioDeBúsqueda_y_Grafo.Lista;
+
+public class Lista<E> {
+
+
+    private NodoLista<E> cabeza; // Es el primer elemento de la lista.
+    private int size; // Una variable para ver la cantidad de elementos que hay en la lista.
+
+
+
+    public Lista() { // Constructor vacío de la lista.
+        cabeza = null;
+        size = 0;
+    }
+
+
+
+    public void add(E elemento) { // Metodo para añadir elementos a la lista.
+        NodoLista<E> nueva = new NodoLista<E>(elemento); // Se crea la lista vacía.
+
+        if (cabeza == null) { // Si la cabeza de la lista está vacía, se añade el elemento en la cabeza.
+            cabeza = nueva;
+        }
+        else { // Si ya hay una cabeza.
+            NodoLista<E> actual = cabeza; // Se crea un nodo actual para recorrer la lista y poder añadirlo.
+
+            while (actual.getSiguienteelemento() != null) { // Se pasa al siguiente elemento mientras que el siguiente elemento exista.
+                actual = actual.getSiguienteelemento(); // El actual pasa a ser el siguiente elemento.
+            }
+            actual.setSiguienteelemento(nueva); // Al acabar el bucle, ya no hay nada después, y ahí es donde se inserta el nuevo elemento.
+        }
+        size += 1; // La lista aumenta en uno.
+    }
+
+
+
+
+    public E remove(int posicion) { // Metodo para eliminar un elemento de una posición determinada.
+        if (posicion < 0 || posicion >= size) { // Si la posición es negativa o mayor al tamaño de la lista, no existe tal elemento.
+            System.out.println("No se puede eliminar el elemento de la posición requerida");
+            return null; // Nos salimos del metodo.
+
+        }
+        NodoLista<E> eliminado; // Se crea un nodo para asignar ese elemento como el que se va a eliminar.
+
+        if(posicion == 0) { // Si la posición es cero, el elemento a eliminar es la cabeza.
+            eliminado = cabeza;
+            cabeza = cabeza.getSiguienteelemento(); // La cabeza pasa a ser el siguiente elemento.
+        }
+        else { // Si la posición no es cero.
+            NodoLista<E> anterior = cabeza; // Se crea un nodo para marcar el anterior elemento al que hay que eliminar.
+            for (int i = 0; i < posicion-1; i = i+1) { // Para todos los elementos hasta que i sea la posicion donde está el elemento a eliminar.
+                anterior = anterior.getSiguienteelemento(); // El anterior elemento pasa a ser el siguiente.
+            }
+            eliminado = anterior.getSiguienteelemento(); // El eliminado pasa a ser el siguiente elemento del anterior del que se va a eliminar.
+            anterior.setSiguienteelemento(eliminado.getSiguienteelemento()); // Se enlazan el anterior elemento y el posterior elemento al elemento eliminado.
+        }
+
+        size -= 1; // Se reduce en uno el tamaño de la lista.
+        return eliminado.getDato(); // Se retorna el dato eliminado.
+    }
+
+
+
+    public E get(int posicion) { // Metodo para ver qué elemento hay en una posición determinada.
+        if (posicion < 0 || posicion >= size) { // Si la posición es negativa o mayor que el tamaño de la lista, no existe.
+            System.out.println("No hay dato que imprimir, ya que no está en la lista");
+            return null; // Nos salimos del metodo.
+        }
+
+        NodoLista<E> actual = cabeza; // Se asigna la cabeza al nodo actual.
+        for (int i = 0; i < posicion; i = i+1) { // Para todos los elementos menores que el de la posición.
+            actual = actual.getSiguienteelemento(); // Se avanza de uno en uno.
+        }
+        return actual.getDato(); // Se retorna el dato del elmento en esa posición.
+    }
+
+
+
+    // Metodo para ver si un elemento está en la lista.
+    public boolean contains(E elemento) {
+        NodoLista<E> actual = cabeza; // El nodo "actual" está en la cabeza.
+        while (actual != null) { // Mientras que el actual exista.
+            if (actual.getDato().equals(elemento)) { // Si actual es el elemento que se buesca.
+                return true; // Se retorna true.
+            }
+            actual = actual.getSiguienteelemento(); // Si no es el elemento, se pasa al siguiente elemento de la lista.
+        }
+        return false; // Si no está el elemento retornamos false.
+    }
+
+
+
+
+    // Es un metodo para saber la posición de un elemento.
+    public int index(E elemento) {
+        NodoLista<E> actual = cabeza; // Se coloca el nodo actual en la cabeza.
+        int indice = 0; // El índice de la cabeza es cero.
+        while (actual != null) { // Mientras que actual exista.
+            if (actual.getDato().equals(elemento)) { // Si actual es el dato en el que se está.
+                return indice; // Se retorna su índice.
+            }
+            actual = actual.getSiguienteelemento(); // Si no lo es, se pasa al siguiente elemento de la lista.
+            indice += 1; // Al avanzar en uno, el índice es uno mayor.
+        }
+        return -1; // Si no está se retorna menos uno.
+    }
+
+
+
+
+    // Metodo para cambiar el elmento en una posición determinada.
+    public void set(int posicion, E elemento) {
+        if (posicion < 0 || posicion >= size) { // Si la posición es negativa o mayor a la cantidad de elementos en la lista.
+            System.out.println("Posición inválida");
+            return; // Nos salimos.
+        }
+        NodoLista<E> actual = cabeza; // Se coloca actual en la cabeza.
+        for (int i = 0; i < posicion; i += 1) { // Para todos los elementos en la lista hasta posición.
+            actual = actual.getSiguienteelemento(); // El actual pasa a ser el siguiente elemento.
+        }
+        actual.setDato(elemento); // Cuando se llegue al elemento, este se cambia.
+    }
+
+
+
+
+    public int getSize() {
+        return size;
+    } // Se retorna el tamaño de la lista.
+
+
+
+    public boolean isEmpty() {
+        return size == 0;
+    } // Si size es cero, se retorna true (true a está vacío), si no es cero, se retorna false (false a está vacío).
+
+
+
+    // Metodo para vaciar la lista.
+    public void clear() {
+        cabeza = null;
+        size = 0;
+    }
+
+
+
+
+    @Override
+    public String toString() {
+        String resultado = "["; // Se imprime el inicio del corchete.
+        NodoLista<E> actual = cabeza; // El actual se coloca en la cabeza.
+        while (actual != null) { // Hasta que actual no exista.
+            resultado += actual.getDato(); // Se añade actual al resultado.
+            actual = actual.getSiguienteelemento(); // Actual avanza.
+            if (actual != null) { // Si actual existe.
+                resultado += ", "; // Se para del anterior elemento con una coma.
+            }
+        }
+        resultado += "]"; // Al acabar se cierra el corchete.
+        return resultado; // Se retorna el String con los elementos de la lista.
+    }
+}
+
+
+package ArbolBinarioDeBúsqueda_y_Grafo.Lista;
+
+public class NodoLista<E> {
+
+    private E dato;
+    private NodoLista<E> siguienteelemento; // Es el nodo que señala al siguiente elemento de la lista.
+
+    public NodoLista(E dato) { // Es el constructor del nodo.
+        this.dato = dato;
+        this.siguienteelemento = null;
+    }
+
+
+
+    public E getDato() {
+        return this.dato;
+    } // Se retorna el dato que esté en el nodo.
+
+    public void setDato(E dato) {
+        this.dato = dato;
+    } // Se cambia el valor del dato que esté en el nodo.
+
+
+
+    public NodoLista<E> getSiguienteelemento() {
+        return this.siguienteelemento;
+    } // Se retorna el siguiente nodo con respecto el que se está.
+
+    public void setSiguienteelemento(NodoLista<E> siguienteelemento) {
+        this.siguienteelemento = siguienteelemento;
+    } // Se modifica cuál es el siguiente nodo con respecto el que se está.
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------Arbol Binario De Búsqueda ----------------------------------------------------
+
+
+
+
+
+
+package ArbolBinarioDeBúsqueda_y_Grafo.Árbol;
+
+import ArbolBinarioDeBúsqueda_y_Grafo.Lista.Lista;
+
+
+public class ArbolBinarioDeBusqueda<E extends Comparable<E>> {
+
+    private NodoABB<E> raiz; // La raíz es el primer nodo del árbol, del cuál salen los hijos (estos hisjos a su vez son raices de subárboles del árbol principal).
+    private int size; // Se crea la variable tamaño para saber cuántos elementos se llevan y no tener que contarlos directamente.
+
+    public ArbolBinarioDeBusqueda() { // Se crea el Constructor vacío del árbol, es decir, cuando todavía no tine ni siquiera un elemento, el nodo raíz.
+        raiz = null; // No hay nodo raíz.
+        size = 0; // No hay nada, y por tanto no tiene tamaño.
+    }
+
+
+
+
+
+
+
+//---------------------------------------------------- Añadir elemento / Modificar elemento / Vaciar el árbol -------------
+
+    // Metodo add para añadir elementos al árbol.
+    public void add(E elemento) {
+        if (contiene(elemento)) { // Si el elemento ya está en el arbol no se puede duplicar.
+            System.out.println("Elemento duplicado, no se inserta");
+            return; // Nos salimos del metodo.
+        }
+        raiz = addRec(raiz, elemento); // Se usa un metodo para añadir el elemento en su respectivo lugar, lo que se calcula desde el nodo raíz.
+        size += 1; // Aumenta en uno la cantidad total de elementos en el árbol.
+    }
+
+
+    private NodoABB<E> addRec(NodoABB<E> nodo, E elemento) { // Es un metodo para añadir el elemento en su respectivo lugar. Es privado porque afecta a otro metodo
+        // (add), y no se necesita fuera de este.
+        if (nodo == null) { // Si tras ir a drecha/izquierda se encuentra un nodo que esté vacío se coloca en esa posición el nuevo elemento.
+            return new NodoABB<>(elemento);
+        }if (elemento.compareTo(nodo.getDato()) < 0) { // Si el elemento es menor al del nodo ...
+            nodo.setIzquierda(addRec(nodo.getIzquierda(), elemento)); // Se pasa al nodo hijo izquierdo del nodo con el que se ha comparado, y se repite la comparación
+            // recursivamente hasta que se llega al primer caso (nodo == null).
+        } else { // Si el elemento es mayor al del nodo ...
+            nodo.setDerecha(addRec(nodo.getDerecha(), elemento)); // Se pasa al nodo hijo derecho del nodo con el que se ha comparado, y se repite la comparación
+            // recursivamente hasta que se llega al primer caso (nodo == null).
+        }
+        return balancear(nodo); // Al acabar de añadir el elemento, se comprueba si hay desbalance y se balancea el árbol en caso positivo.
+    }
+
+
+
+
+
+    // Metodo para modificar un elemento que has metido.
+    public void modificarElemento(E elementoAntiguo, E elementoNuevo) {
+        if (!contiene(elementoAntiguo)) { // Se comprueba si el elemento que intentamos modificar está en el árbol.
+            System.out.println("El elemento no existe en el árbol"); // Si no lo está se avisa de que no está.
+            return; // Nos salimos.
+        } if (elementoAntiguo.equals(elementoNuevo)) { // Si son iguales no se hace nada.
+            return; // Nos salimos.
+        } if (contiene(elementoNuevo)) { // Si el elemento ya está en el árbol, no se puede sustituir otro por ese.
+            raiz = removeRec(raiz, elementoNuevo); // Se elimina el elemento por el que se va a sustituir el que queremos sustituir para que no haya elementos repetidos.
+            size -= 1; // Se reduce el tamaño en uno.
+        }
+        raiz = removeRec(raiz, elementoAntiguo); // Se elimina el elemento que queremos sustituir.
+        size -= 1; // Se reduce en uno la cantidad de elementos en el árbol. Esto se hace porque luego ad hace size += 1.
+        add(elementoNuevo); // Se añade el elemento correcto.
+    }
+
+
+
+    public boolean contiene(E elemento) { // Es un metodo que mira a ver si un elemento está en el árbol o no.
+        return contieneRec(raiz, elemento); // Se mira desde la raíz.
+    }
+
+    private boolean contieneRec(NodoABB<E> nodo, E elemento) {
+        if (nodo == null) { return false; // Si se llega a un nodo vacío no se puede seguir, lo que quiere decir que el elemento no está.
+        } if (nodo.getDato().equals(elemento)) { return true; // Si el nodo en el que se está es el elemento, quiere decir que está.
+        }if (elemento.compareTo(nodo.getDato()) < 0) { // Si el elemento es menor que el del nodo, se va a la izquierda.
+            return contieneRec(nodo.getIzquierda(), elemento);
+        } else { // Si el elemento es mayor al del nodo, se va a la derecha.
+            return contieneRec(nodo.getDerecha(), elemento);}
+    }
+
+    private NodoABB<E> removeRec(NodoABB<E> nodo, E elemento) { // Metodo para eliminar un elemento del árbol.
+        if (nodo == null) { return null; // Si no existe, no hay nada que borrar.
+        } if (elemento.compareTo(nodo.getDato()) < 0) { // Si el elemento es menor que el nodo, se va a la izquierda.
+            nodo.setIzquierda(removeRec(nodo.getIzquierda(), elemento));
+        } else if (elemento.compareTo(nodo.getDato()) > 0) { // Si el elemento es mayor que el nodo, se va a la derecha.
+            nodo.setDerecha(removeRec(nodo.getDerecha(), elemento));
+        } else { // Si no es mayor o menor, entonces es el número.
+            // Caso 1: Nodo hoja.
+            if (nodo.getIzquierda() == null && nodo.getDerecha() == null) {
+                return null;} // Lo eliminamos y ya está.
+            // Caso 2: Un solo hijo.
+            if (nodo.getIzquierda() == null) { // No tiene hijo izquierdo.
+                return nodo.getDerecha(); // Lo sustituimos por su hijo derecho.
+            } if (nodo.getDerecha() == null) { // No tiene hijo derecho.
+                return nodo.getIzquierda();} // Se sustituye por su hijo izquierdo.
+            // Caso 2: Tiene los dos hijos.
+            NodoABB<E> sucesor = minimo(nodo.getDerecha()); // Busca el menor elemento del árbol derecho (el de la izquierda de todos).
+            nodo.setDato(sucesor.getDato()); // Se sustituye por ese elemento.
+            nodo.setDerecha(removeRec(nodo.getDerecha(), sucesor.getDato())); // Se elimina el elmento que se ha pasado a sustituiar al que se ha eliminado para que no está duplicado.
+        }
+        return balancear(nodo); // Se balancea el árbol.
+    }
+
+    private NodoABB<E> minimo(NodoABB<E> nodo) { // Metodo que encuentra el menor valor de un subárbol.
+        while (nodo.getIzquierda() != null) { // Mientras que el hijo izquierdo exista.
+            nodo = nodo.getIzquierda(); // Ir por la izquierda.
+        }
+        return nodo; // Cuando el hijo izquierdo no existe, se retorna el elemento en ese nodo.
+    }
+
+
+    private NodoABB<E> balancear(NodoABB<E> nodo) { // Es el metodo para, tras colocar el nuevo elemento en su lugar, mire si el árbol está desequilibrado,
+        // y si lo está, lo equilibra.
+
+        int balance = alturaRec(nodo.getIzquierda()) - alturaRec(nodo.getDerecha()); // El balance se obtiene mirando recursivamente las alturas hasta llegar a todas los
+        // alturas de los subárboles, y haciendo la diferencia entre estas.
+
+        // Giro hacia la derecha.
+        if (balance > 1) { // Si la profundidad es mayor en el subárbol de la izquierda, se gira hacia la derecha para balancear el árbol.
+
+            if (alturaRec(nodo.getIzquierda().getIzquierda()) >= alturaRec(nodo.getIzquierda().getDerecha())) { // Si está orientado en sentido: nodo - H.izq. - H.izq.
+                return rotacionDerecha(nodo); // Solo hace falta girar una vez porque están colocados: mayor - mediano - menor, y pasan a estar:
+                // mediano - pequeño, mediano - mayor.
+            } else { // Si está orientado: nodo - H.izq. - H.drch.
+                nodo.setIzquierda(rotacionIzquierda(nodo.getIzquierda())); // Está colocado: mayor - menor - mediano. Tiene que pasar a: mayor - mediano - menor,
+                // girándo hacia la izquierda.
+                return rotacionDerecha(nodo); // Una vez está mayor - mediano - pequeño, se gira a la derecha para que esté: mediano - menor, y mediano - mayor.
+            }
+        }
+
+        // Giro hacia la izquierda.
+        if (balance < -1) { // Si la profundidad es mayor en el subárbol de la derecha, se gira hacia la izquierda para balancear el árbol.
+            if (alturaRec(nodo.getDerecha().getDerecha()) >= alturaRec(nodo.getDerecha().getIzquierda())) { // Si está orientado en sentido: nodo - H.drch. - H.drch.
+                return rotacionIzquierda(nodo); // Solo hace falta girarlo hacia la izquierda una vez.
+            } else { // Si está orientado en sentido: nodo - H.drch. - H.izq.
+                nodo.setDerecha(rotacionDerecha(nodo.getDerecha())); // Se gira hacia la derecha para que pase a estar en sentido: mayor - mediano - pequeño.
+                return rotacionIzquierda(nodo); // Se gira hacia la izquierda para que pase a estar en sentido: mediano - menor, mediano - mayor.
+            }
+        }
+        return nodo; // Se retorna el nodo.
+    }
+
+    private NodoABB<E> rotacionDerecha(NodoABB<E> t) { // Es el metodo para girar hacia la derecha y equilibrar el árbol.
+        NodoABB<E> x = t.getIzquierda(); // Se toma el nodo hijo izquierdo de t.
+        NodoABB<E> y = x.getDerecha(); // Se toma el nodo hijo derecho de x.
+        x.setDerecha(t); // Ahora t, en vez de ser el nodo "padre" de x, pasa a ser el hijo derecho de x.
+        t.setIzquierda(y); // Ahora y pasa a ser el nodo hijo izquierda de t.
+        return x; // Se retorna x.
+    }
+
+    private NodoABB<E> rotacionIzquierda(NodoABB<E> t) { // Es el metodo para girar hacia la izquierda y equilibrar el árbol.
+        NodoABB<E> y = t.getDerecha(); // Se toma el nodo hijo derecha de t.
+        NodoABB<E> x = y.getIzquierda(); // Se toma el nodo hijo izquierda de y.
+        y.setIzquierda(t); // Ahora t, en vez de ser el nodo "padre" de y, pasa a ser su nodo hijo izquierda.
+        t.setDerecha(x); // Ahora x pasa a ser el nodo hijo derecha de t.
+        return y; // Se retorna y.
+    }
+
+
+
+
+
+
+    public void vaciar() {
+        raiz = null; // La raíz pasa a ser nula, lo que desconecta los dos subárboles, perdiéndolos, ya que todos los métodos parten desde la raíz.
+        size = 0; // Como ya no hay elementos, la cantidad de elementos en el árbol es de cero.
+    }
+
+
+
+
+
+
+
+
+//-------------------------------------- Obtener la altura / Obtener grado / Elementos en el árbol-------------------------
+
+    // Es el metodo para calcular la altura/profundidad del árbol.
+    public int getAltura() {
+        return alturaRec(raiz); // Se retorna la altura partiendo desde el nodo raíz. Se usa un metodo para ello.
+    }
+
+    private int alturaRec(NodoABB<E> nodo) { // Es el metodo recursivo que calcula la altura del árbol.
+        if (nodo == null) { // Si el nodo en el que se está es nulo, no aumenta la altura.
+            return 0; // Si no aumenta la altura, añade 0 a la altura y se va hacia atrás, dando la altura de esa rama.
+        }
+        int izq = alturaRec(nodo.getIzquierda()); // Se crea la variable interna izq para calcular la altura del subárbol del nodo hijo izquierdo del nodo en el que se esté.
+        int drch = alturaRec(nodo.getDerecha()); // Se crea la variable interna drch para calcular la altura del subárbol del nodo hijo derecho del nodo en el que se esté.
+
+        return 1 + Math.max(izq, drch); // Se retorna el nodo desde el que se ha ido a una rama (1) + la profundidad del subárbol desde ese nodo. Al ser recursivo y mirarse
+        // desde la raíz, da la altura del árbol.
+    }
+
+
+// Metodo para obtener el grado del árbol.
+    public int getGrado() {
+        return getGradoRec(raiz); // Se calcula desde la raíz.
+    }
+    private int getGradoRec(NodoABB<E> nodo) {
+        if (nodo == null) { return 0; // Si el nodo está vacío, hay que retornar cero.
+        }
+        int hijos = 0; // Se inicializa el contador en 0.
+        if (nodo.getIzquierda() != null) hijos += 1; // Si el nodo hijo izquierdo existe, hay un hijo más.
+        if (nodo.getDerecha() != null) hijos += 1; // Si el nodo hijo derecho existe, hay un hijo más.
+        int gradoIzq = getGradoRec(nodo.getIzquierda()); // Se va hacia el subárbol izquierdo del árbol.
+        int gradoDer = getGradoRec(nodo.getDerecha()); // Se va hacia el subárbol derecho del árbol.
+        return Math.max(hijos, Math.max(gradoIzq, gradoDer)); // Se retorna el subárbol que mayor grado tenga.
+    }
+
+
+
+    public int getSize() { // Metodo para saber cuántos elementos hay en el árbol.
+        return size; // Se retorna la variabe size, que ha sido modificada según se incorporaban/modificaban datos.
+    }
+
+
+    public boolean isEmpty() { // Es un metodo para saber si el árbol está vacío.
+        return size == 0; // Si size es 0, retorna true, si size no es 0, retorna false, es decir, que no está vacío.
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------------------- PreOrden / PostOrden / OrdenCentral ----------------------
+
+
+    public Lista<E> getListaPreOrden() { // Los elementos salen en preorden.
+        Lista<E> lista = new Lista<>(); // Se crea una lista vacía.
+        preOrden(raiz, lista); // Se llena la lista en preorden desde la raíz.
+        return lista; // Se imprime la lista.
+    }
+
+    private void preOrden(NodoABB<E> nodo, Lista<E> lista) {
+        if (nodo != null) { // Si el nodo no es vacío. (Si lo es se sale del metodo).
+            lista.add(nodo.getDato()); // Se añade el valor del nodo raíz.
+            preOrden(nodo.getIzquierda(), lista); // Se recorre el subárbol izquierdo de manera recursiva.
+            preOrden(nodo.getDerecha(), lista); // Al salir de la recursión se va al nodo "padre", y se va al nodo hijo derecho, recorriendo otra vez el subárbol
+            // izquierdo si hay, si no lo hay, el derecho, si no lo hay, se va al nodo "abuelo", y va al nodo hijo derecho, que va al subárbol izquierdo, ...
+        }
+    }
+
+    public Lista<E> getListaPostOrden() { // Los elementos salen en postorden.
+        Lista<E> lista = new Lista<>(); // Se crea una lista vacía.
+        postOrden(raiz, lista); // Se llena la lista en postorden desde la raíz.
+        return lista; // Se imprime la lista.
+    }
+
+    private void postOrden(NodoABB<E> nodo, Lista<E> lista) {
+        if (nodo != null) { // Si el nodo no es vacío. (Si lo es se sale del metodo).
+            postOrden(nodo.getIzquierda(), lista); // Se recorre el  subárbol izquierdo de manera recursiva.
+            postOrden(nodo.getDerecha(), lista); // Al salir de la recursión se va al nodo "padre", y se va al nodo hijo derecho, recorriendo otra vez el subárbol
+            // izquierdo si hay, si no lo hay, el derecho, si no lo hay, se va al nodo "abuelo", y va al nodo hijo derecho, que va al subárbol izquierdo, ...
+            lista.add(nodo.getDato()); // Se imprime el nodo hoja al que se haya llegado, e sale, y se imprime el que toque, y así sucesivamente.
+        }
+    }
+
+    public Lista<E> OrdenCentral() { // Los elementos salen en OrdenCentral.
+        Lista<E> lista = new Lista<>(); // Se crea una lista vacía.
+        OrdenCentro(raiz, lista); // Se llena la lista en OrdenCentral.
+        return lista; // Se retorna la lista.
+    }
+
+    private void OrdenCentro(NodoABB<E> nodo, Lista<E> lista) {
+        if (nodo != null) { // Si el nodo no es vacío. (Si lo es se sale del metodo).
+            OrdenCentro(nodo.getIzquierda(), lista); // Se recorre el  subárbol izquierdo de manera recursiva.
+            lista.add(nodo.getDato()); // Se imprime el nodo al subir desde el nodo hijo izquierda, y después se va al nodo hijo derecho.
+            OrdenCentro(nodo.getDerecha(), lista); // Al salir de la recursión se va al nodo "padre", y se va al nodo hijo derecho, recorriendo otra vez el subárbol
+            // izquierdo si hay, si no lo hay, el derecho, si no lo hay, se va al nodo "abuelo", y va al nodo hijo derecho, que va al subárbol izquierdo, ...
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--------- Obtener elementos en un nivel / Camino a un elemento / Máximo y mínimo / Hojas y nodos intermedios ------------
+
+    public Lista<E> getListaDatosNivel(int nivel) { // Es el metodo para ver qué valores hay en un mismo nivel del árbol.
+        Lista<E> lista = new Lista<>(); // Se crea una lista vacía.
+        nivelRec(raiz, 0, nivel, lista); // La lista se llena con los valores de los nodos que estén en el nivel indicado.
+        return lista; // Se retorna la lista.
+    }
+
+    private void nivelRec(NodoABB<E> nodo, int actual, int buscado, Lista<E> lista) {
+        if (nodo == null){ return; // Si el nodo está vacío, se sale del metodo.
+        } if (actual == buscado) { // Si el nivel en el que se está es el nivel al que se quería llegar.
+            lista.add(nodo.getDato()); // Se añade el elemento a la lista.
+        } else { // Si no se está en el nivel que se quiere.
+            nivelRec(nodo.getIzquierda(), actual + 1, buscado, lista); // Se busca en su nodo hijo izquierda.
+            nivelRec(nodo.getDerecha(), actual + 1, buscado, lista); // Se busca en su nodo hijo derecho.
+        }
+    }
+
+
+// Metodo para ver qué elementos hay en un nivel determinado.
+    public int getNumeroNodosNivel(int nivel) {
+        return contarNivelRec(raiz, 0, nivel); // Se busca desde la raíz hasta un nivel determinado.
+    }
+    private int contarNivelRec(NodoABB<E> nodo, int actual, int buscado) {
+        if (nodo == null) { return 0; // Si el nodo es nulo, no se ha llegado al que se busca.
+        }if (actual == buscado) return 1; // Si el que se busca es en el que está ese nodo, se retorna 1.
+        return contarNivelRec(nodo.getIzquierda(), actual + 1, buscado) + contarNivelRec(nodo.getDerecha(), actual + 1, buscado); // Se suma la cantidad total de elementos esn ese nivel del árbol.
+    }
+
+
+// Metodo para sacar el nivel en el que se encuentra un elemento.
+    public int getNivelElemento(E elemento) {
+        return nivelRec(raiz, elemento, 0); // Se inicia desde la raíz, en el nivel cero.
+    }
+    private int nivelRec(NodoABB<E> nodo, E elemento, int nivel) {
+        if (nodo == null) { return -1; // Si no hay nada más en el camino que te llevaría a ese elemento, no existe en el árbol.
+        }if (nodo.getDato().equals(elemento)) { return nivel; // Si el elemento es el nodo en el que se está, se devuelve el nivel.
+        }if (elemento.compareTo(nodo.getDato()) < 0) { // Si el elemento es menor, vamos hacia la izquierda.
+            return nivelRec(nodo.getIzquierda(), elemento, nivel + 1);
+        } else { // Si el elemento es menor, vamos hacia la derecha.
+            return nivelRec(nodo.getDerecha(), elemento, nivel + 1);
+        }
+    }
+
+
+
+
+
+    public Lista<E> getCamino(E elemento) { // Es un metodo que, al darle un elemento, busca el camino desde la raíz hasta ese elemento.
+        Lista<E> lista = new Lista<>(); // Se crea una lista vacía.
+        caminoRec(raiz, elemento, lista); // Se llama al metodo para recorrer el camino.
+        return lista; // Se imprime la lista con los valores hasta el elemento que se quiere.
+    }
+
+    private boolean caminoRec(NodoABB<E> nodo, E elemento, Lista<E> lista) {
+        if (nodo == null){ return false; // Si el nodo está vacío, es porque se ha intentado llegar, y no se ha podido porque nos hemos topado con un muro por donde
+            // ya no se puede avanzar, es decir, no está el elemento que se busca.
+        }
+        lista.add(nodo.getDato()); // Si se pasa por un nodo, este es parte del camino, y por lo tanto hay que añadirlo a la lista.
+        if (nodo.getDato().equals(elemento)) { // Si el elemento que se busca es en el que se está, entonces ya se ha acabado.
+            return true; // Se retona true.
+        } if (elemento.compareTo(nodo.getDato()) < 0) { // Si el elemento que se busca es menor que en el que se está.
+            if (caminoRec(nodo.getIzquierda(), elemento, lista)){ return true;} // Se va hacia la izquierda. Si se ve que se retorna true es porque ha acabado llegando
+            // hasta el elemento que se buscaba.
+        } else { // Si el elmento que se busca es mayor que en el que se está.
+            if (caminoRec(nodo.getDerecha(), elemento, lista)){ return true;} // Se va hacia la derecha. Si se ve que se retorna true es porque ha acabado llegando
+            // hasta el elemento que se buscaba.
+        }
+
+        lista.remove(lista.getSize() - 1); // Se quita el elemento de la lista, porque ya se ha buscado ahí en su subárbol derecho e izquierdo, y no está el elemento.
+        return false; // Se retorna false, porque no se ha encontrado el elemento, y este no formaría parte del camino hasta él.
+    }
+
+
+
+// Metodo para obtener el menor elemento del árbol.
+    public E getMin() {
+        if (raiz == null) { return null;} // Si la raíz no existe, se retorna null.
+        NodoABB<E> actual = raiz; // Se crea un nodo actual que es la raíz.
+        while (actual.getIzquierda() != null) { // Mientras que el nodo hijo izquierdo no sea nulo.
+            actual = actual.getIzquierda(); // Se sigue por la izquierda.
+        }
+        return actual.getDato(); // Al salir del bucle se retorna el dato (el elemento mínimo del árbol).
+    }
+
+// Metodo para obtener el mayor elemento del árbol.
+    public E getMax() {
+        if (raiz == null) { return null;} // Si la raíz no existe, se retorna null.
+        NodoABB<E> actual = raiz; // Se crea un nodo actual que es la raíz.
+        while (actual.getDerecha() != null) { // Mientras que el nodo hijo derecho no sea nulo.
+            actual = actual.getDerecha(); // Se sigue por la derecha.
+        }
+        return actual.getDato(); // Al salir del bucle se retorna el mayor eledel árbol.
+    }
+
+
+
+// Metodo para contar cuantas hojas tiene el árbol.
+    public int contarHojas() {
+        return contarHojasRec(raiz); // Se mira desde la raíz.
+    }
+    private int contarHojasRec(NodoABB<E> nodo) {
+        if (nodo == null) { return 0; // Si el nodo no existe, se retorna cero.
+        }if (nodo.getIzquierda() == null && nodo.getDerecha() == null) { // Si su hijo derecho e izquierdo no existe es porque es un nodo raíz.
+            return 1; // Por ello se aumenta en uno la cantidad de ndods hoja.
+        }
+        return contarHojasRec(nodo.getIzquierda()) + contarHojasRec(nodo.getDerecha()); // Se mira en el subárbol derecho y en el subárbol izquierdo recursivamente.
+    }
+
+
+
+// Metodo para contar cuantos nodos internos tiene el árbol.
+    public int contarNodosInternos() {
+        return contarInternosRec(raiz); // Se mira desde la raíz.
+    }
+    private int contarInternosRec(NodoABB<E> nodo) {
+        if (nodo == null) { return 0; // Si el nodo no existe, no es un nodo hoja.
+        }if (nodo.getIzquierda() == null && nodo.getDerecha() == null) { // Si el nodo que se mira es un nodo hoja, no es interno.
+            return 0;
+        }
+        return 1 + contarInternosRec(nodo.getIzquierda()) + contarInternosRec(nodo.getDerecha()); // Se miran el subárbol izquierdo y el subárbol derecho, y se le suma
+        // uno (el nodo que se está mirando).
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------- Subárboles --------------------------------------------
+
+    public ArbolBinarioDeBusqueda<E> getSubArbolIzquierda() { // Es un metodo para utilizar el subárbol izquierdo de un árbol.
+        ArbolBinarioDeBusqueda<E> sub = new ArbolBinarioDeBusqueda<>(); // Se crea un nuevo árbol de búsqueda.
+        if (raiz != null) { // Si la raíz existe.
+            sub.raiz = raiz.getIzquierda(); // La raíz pasa a ser el nodo hijo izquierda.
+        }
+        return sub; // Se retorna la nueva raíz.
+    }
+
+    public ArbolBinarioDeBusqueda<E> getSubArbolDerecha() { // Es un metodo para utilizar el subárbol derecho de un árbol.
+        ArbolBinarioDeBusqueda<E> sub = new ArbolBinarioDeBusqueda<>(); // Se crea un nuevo árbol de búsqueda.
+        if (raiz != null) { // Si la raíz existe.
+            sub.raiz = raiz.getDerecha(); // La raíz pasa a ser el nodo hijo derecho.
+        }
+        return sub; // Se retorna la nueva raíz.
+    }
+
+
+
+
+
+
+//--------------------------------------- Homogéneo / Completo / Casi Completo --------------------------------------------
+
+    // Metodo para ver si el árbol es homogéneo.
+    public boolean isArbolHomogeneo() {
+        if (raiz == null) { return true;} // Si la raíz no exista, todos los nodos tienen cero hijos.
+        int grado = getGrado(); // El grado máximo del árbol.
+        return esHomogeneo(raiz, grado); // Se mira desde la raíz.
+    }
+
+    private boolean esHomogeneo(NodoABB<E> nodo, int grado) {
+        if (nodo == null) { return true;}
+        int hijos = 0; // Se inicializa un contador.
+        if (nodo.getIzquierda() != null) { hijos += 1; // Si tiene hijo izquierdo, ese nodo se suma un hijo.
+        }if (nodo.getDerecha() != null) { hijos += 1;// Si tiene hijo derecho, ese nodo se suma un hijo.
+        }if (hijos != grado && hijos != 0) { return false;} // Si la cantidad de hijos está entre el grado y cero, no es homogéneo.
+        return esHomogeneo(nodo.getIzquierda(), grado)  && esHomogeneo(nodo.getDerecha(), grado); // Se llama a los subárboles para mirar sus nodos.
+    }
+
+
+
+// Metodo para ver si el árbol es completo.
+    public boolean isArbolCompleto() {
+        int altura = alturaRec(raiz); // La altura del árbol.
+        return esCompleto(raiz, 1, altura);
+    }
+
+    private boolean esCompleto(NodoABB<E> nodo, int nivel, int altura) {
+        if (nodo == null) { return true;
+        }if (nodo.getIzquierda() == null && nodo.getDerecha() == null) { // Si el nodo es hoja.
+            return nivel == altura; // Se compara con la altura del árbol para ver si conincide, y retorna true o false.
+        }
+        return esCompleto(nodo.getIzquierda(), nivel + 1, altura)  && esCompleto(nodo.getDerecha(), nivel + 1, altura);
+        // Se miran los subárboles hasta que se acabe o el nivel de un nodo hoja es distinto de la altura.
+    }
+
+
+
+// Metodo para ver si el árbol el casi completo.
+    public boolean isArbolCasiCompleto() {
+        int size = getSize(); // Cantidad de elementos que conforman el árbol.
+        return esCasiCompleto(raiz, 0, size);
+    }
+
+    private boolean esCasiCompleto(NodoABB<E> nodo, int indice, int size) {
+        if (nodo == null) { return true;
+        }if (indice >= size) { return false;} // Si el índice es mayor que el tamaño, está mal.
+        return esCasiCompleto(nodo.getIzquierda(), 2 * indice + 1, size)  && esCasiCompleto(nodo.getDerecha(), 2 * indice + 2, size);
+    }
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------ Imprimir el árbol ------------------------------------------------------
+
+    // Metodo para imprimir el árbol.
+    public void imprimirArbol() {
+        imprimirRec(raiz, "", true);
+    }
+
+    private void imprimirRec(NodoABB<E> nodo, String prefijo, boolean esDerecho) {
+        if (nodo == null) { return; // Si ya no hay nodos, esa rama del árbol ha acabado de hacerse.
+        }
+        // Se imprime el subárbol derecho.
+        if (nodo.getDerecha() != null) { // Si exi
+            // ste un nodo hijo derecho del nodo.
+            imprimirRec(nodo.getDerecha(), prefijo + (esDerecho ? "        " : " |      "), true);
+            // El prefijo añade los espacios o las barras, (esDerecho ? hace que si viene de la derecha emprima los espacios, y
+            // si no viene de la derecha (vienede la izquierda), se añade una columna. True marca a esDerecho que viene por la derecha,
+            // es decir, que se añaden espacios.
+        }
+        // Imprime el nodo actual
+        System.out.println(prefijo + (esDerecho ? " /-- " : " \\-- ") + nodo.getDato());
+        // Si es derecho se añade "/--", y sino se añade "--\", y junto a ello el elemento.
+
+        // Se imprime el subárbol izquierdo.
+        if (nodo.getIzquierda() != null) { // Si existe.
+            imprimirRec(nodo.getIzquierda(), prefijo + (esDerecho ? " |      " : "        "), false);
+            // Como viene de la izquierda, esDerecho es false, y se ponen espacios.
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------- Arbol Binario de Enteros ---------------------------------------
+package ArbolBinarioDeBúsqueda_y_Grafo.Árbol;
+
+import ArbolBinarioDeBúsqueda_y_Grafo.Lista.Lista;
+
+public class ArbolBinarioDeBusquedaDeEnteros extends ArbolBinarioDeBusqueda<Integer> {
+
+
+    public int getSuma() { // Metodo para sumar todos los elementos del árbol.
+        return sumaRec(getListaPreOrden());
+    }
+
+    private int sumaRec(Lista<Integer> lista) { // Metodo paa hacer la suma.
+        int suma = 0; // Se inicializa la suma en cero.
+        for (int i = 0; i < lista.getSize(); i++) { // Se recorren todos los elementos.
+            suma += lista.get(i); // Se van añadiendo a la suma.
+        }
+        return suma; // Se retorna el valor de la suma total de los elementos dentro del árbol.
+    }
+
+
+
+
+
+
+    public void sumaOrdenada(int inicio, int fin) { // Metodo para añadir ordenadamente elementos a un árbol.
+        for (int i = inicio; i <= fin; i++) { // Se recorren los números.
+            add(i); // Se añaden.
+        }
+    }
+
+
+
+
+
+
+    public void sumaAleatoria(int inicio, int fin) { // Metodo para añadir de manera aleatoria elementos a un árbol.
+        Lista<Integer> lista = new Lista<>(); // Se crea una lista vacía de enteros.
+        for (int i = inicio; i <= fin; i++) {
+            lista.add(i); // Se llena la lista en orden.
+        }
+
+        while (!lista.isEmpty()) { // Hasta que la lista no esté vacía.
+            int indice = (int) (Math.random() * lista.getSize()); // Se trunca la multiplicación entre Math.random (que va desde 0 hasta 1 sin llegar al 1) y el
+            // tamaño de la lista, entonces, por ejemolo: 0'33(Math.random) * 5(Tamaño de la lista) = 1'65, entonces lo truncamos y se obtiene el 1, que sería el índice
+            // del elemento que se añadiría al árbol.
+            int valor = lista.get(indice); // Se busca el elemento en el índice de la lista.
+            add(valor); // Se añade al árbol.
+            lista.remove(indice); // Se elimina el elemento añadido.
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// ----------------------------------------------- Main_Test_ABB ---------------------------------
+package ArbolBinarioDeBúsqueda_y_Grafo.Árbol;
+
+public class Main_Test_ABB {
+
+    public static void main(String[] args) {
+
+        ArbolBinarioDeBusqueda<Integer> arbol = new ArbolBinarioDeBusqueda<>(); // Creamos el árbol vacío.
+
+        System.out.println("------ Árbol vacío ------");
+        System.out.println("¿Está vacío? : " + arbol.isEmpty());
+        System.out.println("El tamaño es: " + arbol.getSize());
+        System.out.println("La altura es: " + arbol.getAltura());
+        System.out.println("El menor elemento es: " + arbol.getMin());
+        System.out.println("El mayor elemento es: " + arbol.getMax());
+
+
+
+        System.out.println("\n------ Insertar los elementos ------");
+
+        arbol.add(30);
+        System.out.println("Insertado el 30");
+        arbol.add(20);
+        System.out.println("Insertado el 20");
+        arbol.add(40);
+        System.out.println("Insertado el 40");
+        arbol.add(10);
+        System.out.println("Insertado el 10");
+        arbol.add(25);
+        System.out.println("Insertado el 25");
+        arbol.add(35);
+        System.out.println("Insertado el 35");
+        arbol.add(50);
+        System.out.println("Insertado el 50");
+
+
+
+        System.out.println("\n------ Árbol lleno ------");
+
+        System.out.println("El tamaño es: " + arbol.getSize());
+        System.out.println("La altura es: " + arbol.getAltura());
+        System.out.println("El grado es: " + arbol.getGrado());
+
+        System.out.println("El menor elemento es: " + arbol.getMin());
+        System.out.println("El mayor elemento es: " + arbol.getMax());
+
+        System.out.println("La cantidad de hojas en el árbol es: " + arbol.contarHojas());
+        System.out.println("La cantidad de nodos internos es: " + arbol.contarNodosInternos());
+
+        System.out.println("El árbol es: ");
+        arbol.imprimirArbol();
+
+
+
+
+
+
+        System.out.println("\n------ Orden de impresión del árbol en una lista ------");
+
+        System.out.println("En PreOrden: " + arbol.getListaPreOrden());
+        System.out.println("En PostOrden: " + arbol.getListaPostOrden());
+        System.out.println("En OrdenCentral: " + arbol.OrdenCentral());
+
+
+
+
+
+
+
+        System.out.println("\n------ Nodos en cada nivel ------");
+
+        for (int i = 0; i < arbol.getAltura(); i++) { // Se va aumentando el nivel
+            System.out.println("En el nivel " + i + " están los nodos: " + arbol.getListaDatosNivel(i));
+            System.out.println("En el nivel " + i + " son: " + arbol.getNumeroNodosNivel(i));
+            System.out.println(" nodos en total. ");
+        }
+
+
+
+        System.out.println("\n------ Buscar elementos ------");
+
+        int buscar = 25;
+
+        System.out.println("¿Contiene el " + buscar + "? : " + arbol.contiene(buscar));
+        System.out.println("¿Cuál es el nivel del " + buscar + "? : " + arbol.getNivelElemento(buscar));
+        System.out.println("¿Cuál es el camino al " + buscar + "? : " + arbol.getCamino(buscar));
+
+
+
+
+
+        System.out.println("\n------ Tipos de árbol ------");
+
+        System.out.println("¿Es homogéneo? : " + arbol.isArbolHomogeneo());
+        System.out.println("¿Es completo? : " + arbol.isArbolCompleto());
+        System.out.println("¿Es casi completo? : " + arbol.isArbolCasiCompleto());
+
+
+
+
+
+        System.out.println("\n------ Subárboles ------");
+
+        System.out.println("El subárbol izquierdo es: " + arbol.getSubArbolIzquierda().OrdenCentral());
+        System.out.println("El subárbol derecho es: " + arbol.getSubArbolDerecha().OrdenCentral());
+
+
+
+
+
+
+        System.out.println("\n------ Modificar un elemento ------");
+
+        System.out.println("El árbol anterior es: ");
+        arbol.imprimirArbol();
+
+
+        arbol.modificarElemento(25, 27);
+        System.out.println("El árbol después de cambiar el 25 por el 27 es:");
+        arbol.imprimirArbol();
+
+
+        arbol.modificarElemento(10, 60);
+        System.out.println("El árbol después de cambiar el 10 por el 60:");
+        arbol.imprimirArbol();
+        System.out.println("La altura es: " + arbol.getAltura());
+
+
+        arbol.modificarElemento(30, 35);
+        System.out.println("El árbol después de cambiar el 30 por el 35:");
+        arbol.imprimirArbol();
+
+
+
+
+
+
+        System.out.println("\n------ Sus tipos al modificarlo ------");
+
+        System.out.println("¿Es homogéneo? : " + arbol.isArbolHomogeneo());
+        System.out.println("¿Es completo? : " + arbol.isArbolCompleto());
+        System.out.println("¿Es casi completo? : " + arbol.isArbolCasiCompleto());
+
+
+
+
+
+
+        System.out.println("\n------ árbol vacío ------");
+
+        arbol.vaciar();
+        System.out.println("¿El árbol está vacío? : " + arbol.isEmpty());
+        System.out.println("El tamaño es: " + arbol.getSize());
+        System.out.println("La altura es: " + arbol.getAltura());
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------- Main_Test_ABBE -----------------------------------------
+package ArbolBinarioDeBúsqueda_y_Grafo.Árbol;
+
+import ArbolBinarioDeBúsqueda_y_Grafo.Lista.Lista;
+
+public class Main_Test_ABBE {
+
+    public static void main(String[] args) {
+
+        System.out.println("------ Prueba ordenada ------");
+        pruebaOrdenada();
+
+        System.out.println("\n------ Prueba aleatoria ------");
+        pruebaAleatoria();
+    }
+
+    // ---------------- PRUEBA 1 ----------------
+
+    public static void pruebaOrdenada() {
+        ArbolBinarioDeBusquedaDeEnteros arbol = new ArbolBinarioDeBusquedaDeEnteros(); // Se crea el árbol binario de enteros.
+        arbol.sumaOrdenada(0, 128); // Se suma desde el cero hasta el 128 de forma ordenada.
+        System.out.println("Suma total: " + arbol.getSuma());
+        System.out.println("Suma en PreOrden: " + sumaLista(arbol.getListaPreOrden()));
+        System.out.println("Suma en PostOrden: " + sumaLista(arbol.getListaPostOrden()));
+        System.out.println("Suma en Orden Central: " + sumaLista(arbol.OrdenCentral()));
+        int sumaIzq = sumaLista(arbol.getSubArbolIzquierda().OrdenCentral()); // Se hace la suma del subárbol derecho en OrdenCentral.
+        int sumaDer = sumaLista(arbol.getSubArbolDerecha().OrdenCentral()); // Se hace la suma del subárbol izquierdo en Orden Central.
+        System.out.println("Suma subárbol izquiero + subárbol derecho + raíz: " + (sumaIzq + sumaDer + arbol.getListaPreOrden().get(0))); // Se suman los sumárboles y la raíz.
+        System.out.println("Altura: " + arbol.getAltura()); // Se saca la altura del árbol.
+        System.out.println("Camino a 110: " + arbol.getCamino(110)); // Se saca el camino hasta el 110.
+        System.out.println("Longitud camino: " + (arbol.getCamino(110).getSize() - 1)); // Se saca por cuántos nodo pasa el camino hasta 110.
+    }
+
+    // ---------------- PRUEBA 2 ----------------
+
+    public static void pruebaAleatoria() { // Se hace lo mismo que en la prueba ordenada.
+        ArbolBinarioDeBusquedaDeEnteros arbol = new ArbolBinarioDeBusquedaDeEnteros(); // Se crea el árbol binario de enteros.
+        arbol.sumaAleatoria(0, 128);
+        System.out.println("Suma total: " + arbol.getSuma());
+        System.out.println("Suma en PreOrden: " + sumaLista(arbol.getListaPreOrden()));
+        System.out.println("Suma en PostOrden: " + sumaLista(arbol.getListaPostOrden()));
+        System.out.println("Suma en Orden Central: " + sumaLista(arbol.OrdenCentral()));
+        int sumaIzq = sumaLista(arbol.getSubArbolIzquierda().OrdenCentral());
+        int sumaDer = sumaLista(arbol.getSubArbolDerecha().OrdenCentral());
+        System.out.println("Suma subárbol izquierdo + subárbol derecho + raíz: " + (sumaIzq + sumaDer + arbol.getListaPreOrden().get(0)));
+        System.out.println("Altura: " + arbol.getAltura());
+        System.out.println("Camino a 110: " + arbol.getCamino(110));
+        System.out.println("Longitud camino: " + (arbol.getCamino(110).getSize() - 1));
+    }
+
+    // ---------------- METODO AUXILIAR ----------------
+
+    private static int sumaLista(Lista<Integer> lista) { // Se suman elementos de una lista.
+        int suma = 0; // Se inicializa.
+        for (int i = 0; i < lista.getSize(); i+=1) { // Se recorre la lista.
+            suma += lista.get(i); // Se añaden todos los elementos.
+        }
+         return suma; // Se retorna la suma de los elementos de la lista.
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------------- Nodo_ABB --------------------------------------
+package ArbolBinarioDeBúsqueda_y_Grafo.Árbol;
+
+public class NodoABB<E extends Comparable<E>> {
+
+    private E dato;
+    private NodoABB<E> izquierda; // Se crea el nodo para el hijo de la izquierda (valor menor) con respecto un nodo determinado.
+    private NodoABB<E> derecha; // Se crea el nodo para el hijo de la derecha (valor mayor) con respecto un nodo determinado.
+
+    public NodoABB(E dato) { // Constructor del Nodo.
+        this.dato = dato;
+        this.izquierda = null;
+        this.derecha = null;
+    }
+
+    // Getter y setter del atributo dato.
+    public E getDato() { return dato;}
+    public void setDato(E dato) { this.dato = dato;}
+
+    // Getter y setter del atributo del nodo hijo izquierdo de un nodo.
+    public NodoABB<E> getIzquierda() { return izquierda;}
+    public void setIzquierda(NodoABB<E> izquierda) { this.izquierda = izquierda;}
+
+    // Getter y setter del atributo del nodo hijo derecho de un nodo.
+    public NodoABB<E> getDerecha() { return derecha;}
+    public void setDerecha(NodoABB<E> derecha) { this.derecha = derecha;}
+}
+
+
+
+
+
+
+
+
+//-------------------------------------------- Grafo conexo.json ----------------------------------
+{
+  "tripletas":[
+    {"s":"A","p":"conecta","o":"B"},
+    {"s":"B","p":"conecta","o":"C"},
+    {"s":"C","p":"conecta","o":"D"}
+  ]
+}
+
+
+
+//------------------------------------------------Grafo Disjunto.json ----------------------------------
+{
+  "tripletas":[
+    {"s":"A","p":"conecta","o":"B"},
+    {"s":"C","p":"conecta","o":"D"}
+  ]
+}
+
+
+// ------------------------------------------------- Nobel.json --------------------------------------
+{
+  "tripletas":[
+    {"s":"persona:Einstein","p":"es_tipo","o":"fisico"},
+    {"s":"persona:Einstein","p":"premio","o":"nobel"},
+    {"s":"persona:Einstein","p":"nace_en","o":"ciudad:Ulm"},
+
+    {"s":"persona:MaxPlanck","p":"es_tipo","o":"fisico"},
+    {"s":"persona:MaxPlanck","p":"premio","o":"nobel"},
+    {"s":"persona:MaxPlanck","p":"nace_en","o":"ciudad:Ulm"},
+
+    {"s":"persona:Curie","p":"premio","o":"nobel"},
+    {"s":"persona:Curie","p":"nace_en","o":"ciudad:Varsovia"}
+  ]
+}
